@@ -2,6 +2,8 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PathlabApi.Data;
 
 #nullable disable
@@ -19,9 +21,8 @@ namespace PathlabApi.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-           
 
-            modelBuilder.Entity("RajApi.Data.Models.ApplicationLog", b =>
+            modelBuilder.Entity("PathlabApi.Data.Models.ApplicationLog", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -59,44 +60,9 @@ namespace PathlabApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ApplicationLogs");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            ActivityType = 0,
-                            Date = new DateTime(2025, 3, 31, 6, 14, 50, 473, DateTimeKind.Utc).AddTicks(7496),
-                            EntityId = 1L,
-                            Key = "1536B022-C5C9-4358-BB6A-466F2075B7D4",
-                            Member = "super@rajwada.com",
-                            Name = "Company",
-                            Status = 0
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            ActivityType = 0,
-                            Date = new DateTime(2025, 3, 31, 6, 14, 50, 473, DateTimeKind.Utc).AddTicks(7499),
-                            EntityId = 1L,
-                            Key = "1536B022-C5C9-4358-BB6A-466F2075B7D4",
-                            Member = "super@rajwada.com",
-                            Name = "Department",
-                            Status = 0
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            ActivityType = 0,
-                            Date = new DateTime(2025, 3, 31, 6, 14, 50, 473, DateTimeKind.Utc).AddTicks(7501),
-                            EntityId = 2L,
-                            Key = "1536B022-C5C9-4358-BB6A-466F2075B7D4",
-                            Member = "super@rajwada.com",
-                            Name = "Department",
-                            Status = 0
-                        });
                 });
-             
-            modelBuilder.Entity("RajApi.Data.Models.Attachment", b =>
+
+            modelBuilder.Entity("PathlabApi.Data.Models.Attachment", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -142,7 +108,7 @@ namespace PathlabApi.Migrations
                     b.ToTable("Attachments");
                 });
 
-            modelBuilder.Entity("RajApi.Data.Models.Department", b =>
+            modelBuilder.Entity("PathlabApi.Data.Models.Department", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -175,127 +141,9 @@ namespace PathlabApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Departments");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            Code = "CI",
-                            Date = new DateTime(2025, 3, 31, 6, 14, 50, 473, DateTimeKind.Utc).AddTicks(7449),
-                            Key = "1536B022-C5C9-4358-BB6A-466F2075B7D4",
-                            Member = "super@rajwada.com",
-                            Name = "Civil",
-                            Status = 0
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            Code = "LE",
-                            Date = new DateTime(2025, 3, 31, 6, 14, 50, 473, DateTimeKind.Utc).AddTicks(7452),
-                            Key = "1536B022-C5C9-4358-BB6A-466F2075B7D4",
-                            Member = "super@rajwada.com",
-                            Name = "Legal",
-                            Status = 0
-                        });
                 });
 
-            modelBuilder.Entity("RajApi.Data.Models.Dependency", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<string>("Code")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Key")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("Member")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(511)
-                        .HasColumnType("nvarchar(511)");
-
-                    b.Property<int?>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Dependencies");
-                });
-
-            modelBuilder.Entity("RajApi.Data.Models.UnitOfWork", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<long?>("ActivityId")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime?>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Key")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("MarkerJson")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Member")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(511)
-                        .HasColumnType("nvarchar(511)");
-
-                    b.Property<long?>("ParentId")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("ParentName")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<long?>("PlanId")
-                        .HasColumnType("bigint");
-
-                    b.Property<int?>("Status")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ActivityId");
-
-                    b.HasIndex("ParentId");
-
-                    b.HasIndex("PlanId");
-
-                    b.ToTable("UnitOfWorks");
-                });
-
-            modelBuilder.Entity("RajApi.Data.Models.Uom", b =>
+            modelBuilder.Entity("PathlabApi.Data.Models.Uom", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -328,7 +176,6 @@ namespace PathlabApi.Migrations
 
                     b.ToTable("Uoms");
                 });
-
 #pragma warning restore 612, 618
         }
     }
