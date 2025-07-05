@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IlabAuthentication.Migrations
 {
     [DbContext(typeof(AuthenticationDbContext))]
-    [Migration("20250705050231_Initial")]
+    [Migration("20250705052427_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -214,10 +214,10 @@ namespace IlabAuthentication.Migrations
                             Member = "root",
                             NormalizedEmail = "ROOT",
                             NormalizedUserName = "ROOT",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIUXHqy53Dre8nfwKZJ/mfDjLdtvMcpPO0pC7M4VwCb+K+eta6c8nxYOp21EfUbGzg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELjslJJId5s/CZUdXozgD3Pr7IbgTUn+CiLkN8o1sf2+WTJWizU2wDKXb/IPyW35/Q==",
                             PhoneNumber = "0000",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "R7JOVNY6TU5ACLDKWMJCCXJZIHNATIIJ",
+                            SecurityStamp = "3DMLAIZXSOSRUJWEQ2R7NTE7NGAAQYBA",
                             TwoFactorEnabled = false,
                             UserName = "root"
                         },
@@ -237,10 +237,10 @@ namespace IlabAuthentication.Migrations
                             NormalizedEmail = "SUPER@ZORYA.CO.IN",
                             NormalizedUserName = "SUPER",
                             ParentId = 1L,
-                            PasswordHash = "AQAAAAIAAYagAAAAEAvvhBeNuMBXOP4HueTG/lZiPS1ieIlXzH5CWQCcpPu1ouRK53hHwO7cuWDJg8oBzw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELjslJJId5s/CZUdXozgD3Pr7IbgTUn+CiLkN8o1sf2+WTJWizU2wDKXb/IPyW35/Q==",
                             PhoneNumber = "0000",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "P2GVVVE7O7TUFSSULMZN4QT4MPTC6YHT",
+                            SecurityStamp = "3DMLAIZXSOSRUJWEQ2R7NTE7NGAAQYBA",
                             TwoFactorEnabled = false,
                             UserName = "super@zorya.co.in"
                         });
