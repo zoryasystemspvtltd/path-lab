@@ -53,7 +53,7 @@ namespace IlabAuthentication.Controllers
                     And = new Condition()
                     {
                         Name = "NormalizedUserName",
-                        Value = "SUPER@RAJWADA.COM",
+                        Value = "SUPER@ZORYA.CO.IN",
                         Operator = OperatorType.InEquality,
                         And = noSelf
                     }
