@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pathlab.logger", "pathlab.l
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.com", "test.com\test.com.csproj", "{87855FA0-D12C-4C2F-8CE5-E3CB2188A282}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIS", "LIS", "{2E522367-69A6-4842-A5B3-E3E0E388A874}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{363FEF00-F2BE-4823-942E-40AC874E0ABB} = {ED28856E-A651-469B-834E-30632AA032CC}
+		{4E024AE4-C547-4AD8-A423-A066D0C7568B} = {2E522367-69A6-4842-A5B3-E3E0E388A874}
+		{2A783589-CF9F-4735-A777-8A8F24C28533} = {2E522367-69A6-4842-A5B3-E3E0E388A874}
+		{87855FA0-D12C-4C2F-8CE5-E3CB2188A282} = {2E522367-69A6-4842-A5B3-E3E0E388A874}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6E0C755-B758-4687-A1AE-E54BAA64F848}
