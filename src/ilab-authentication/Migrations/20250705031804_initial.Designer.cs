@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IlabAuthentication.Migrations
 {
     [DbContext(typeof(AuthenticationDbContext))]
-    [Migration("20250629074959_pathlab-migration-initial")]
-    partial class pathlabmigrationinitial
+    [Migration("20250705031804_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

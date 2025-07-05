@@ -12,8 +12,8 @@ using PathlabApi.Data;
 namespace PathlabApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250629075856_pathlab-api-initial-migration")]
-    partial class pathlabapiinitialmigration
+    [Migration("20250705031941_Initials")]
+    partial class Initials
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
