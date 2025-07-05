@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IlabAuthentication.Migrations
 {
     [DbContext(typeof(AuthenticationDbContext))]
-    [Migration("20250705031804_initial")]
-    partial class initial
+    [Migration("20250705050231_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -227,14 +227,14 @@ namespace IlabAuthentication.Migrations
                             AccessFailedCount = 0,
                             ConcurrencyStamp = "e6ac56cd-cb41-4059-b979-a0d7a7ac5fe0",
                             Disable = false,
-                            Email = "super@rajwada.com",
+                            Email = "super@zorya.co.in",
                             EmailConfirmed = true,
                             FirstName = "Super",
                             Key = "1536B022-C5C9-4358-BB6A-466F2075B7D4",
                             LastName = "Admin",
                             LockoutEnabled = false,
                             Member = "root",
-                            NormalizedEmail = "SUPER@RAJWADA.COM",
+                            NormalizedEmail = "SUPER@ZORYA.CO.IN",
                             NormalizedUserName = "SUPER",
                             ParentId = 1L,
                             PasswordHash = "AQAAAAIAAYagAAAAEAvvhBeNuMBXOP4HueTG/lZiPS1ieIlXzH5CWQCcpPu1ouRK53hHwO7cuWDJg8oBzw==",
@@ -242,7 +242,7 @@ namespace IlabAuthentication.Migrations
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "P2GVVVE7O7TUFSSULMZN4QT4MPTC6YHT",
                             TwoFactorEnabled = false,
-                            UserName = "super@rajwada.com"
+                            UserName = "super@zorya.co.in"
                         });
                 });
 

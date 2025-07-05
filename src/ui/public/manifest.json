@@ -1,6 +1,6 @@
 {
-  "short_name": "Rajwada",
-  "name": "Rajwada Plan Management",
+  "short_name": "plm",
+  "name": "Pathology Laboratory Management",
   "icons": [
       {
           "src": "/android-chrome-192x192.png",

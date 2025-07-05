@@ -94,10 +94,10 @@ public class AuthenticationDbContext : IdentityDbContext<ApplicationUser, Applic
                     Id = superUserId,
                     FirstName = "Super",
                     LastName = "Admin",
-                    Email = "super@rajwada.com",
-                    UserName = "super@rajwada.com",
+                    Email = "super@zorya.co.in",
+                    UserName = "super@zorya.co.in",
                     NormalizedUserName = "SUPER",
-                    NormalizedEmail = "SUPER@RAJWADA.COM",
+                    NormalizedEmail = "SUPER@ZORYA.CO.IN",
                     PhoneNumber = "0000",
                     EmailConfirmed = true,
                     // Password Admin@123 // TODO Change Password

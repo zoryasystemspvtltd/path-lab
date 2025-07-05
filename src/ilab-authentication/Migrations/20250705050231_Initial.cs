@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace IlabAuthentication.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -224,7 +224,7 @@ namespace IlabAuthentication.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "Address", "ConcurrencyStamp", "Department", "Disable", "Email", "EmailConfirmed", "FirstName", "Key", "LastName", "LockoutEnabled", "LockoutEnd", "Member", "NormalizedEmail", "NormalizedUserName", "ParentId", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PhotoUrl", "SecurityStamp", "Theme", "TwoFactorEnabled", "UserName" },
-                values: new object[] { 2L, 0, null, "e6ac56cd-cb41-4059-b979-a0d7a7ac5fe0", null, false, "super@rajwada.com", true, "Super", "1536B022-C5C9-4358-BB6A-466F2075B7D4", "Admin", false, null, "root", "SUPER@RAJWADA.COM", "SUPER", 1L, "AQAAAAIAAYagAAAAEAvvhBeNuMBXOP4HueTG/lZiPS1ieIlXzH5CWQCcpPu1ouRK53hHwO7cuWDJg8oBzw==", "0000", false, null, "P2GVVVE7O7TUFSSULMZN4QT4MPTC6YHT", null, false, "super@rajwada.com" });
+                values: new object[] { 2L, 0, null, "e6ac56cd-cb41-4059-b979-a0d7a7ac5fe0", null, false, "super@zorya.co.in", true, "Super", "1536B022-C5C9-4358-BB6A-466F2075B7D4", "Admin", false, null, "root", "SUPER@ZORYA.CO.IN", "SUPER", 1L, "AQAAAAIAAYagAAAAEAvvhBeNuMBXOP4HueTG/lZiPS1ieIlXzH5CWQCcpPu1ouRK53hHwO7cuWDJg8oBzw==", "0000", false, null, "P2GVVVE7O7TUFSSULMZN4QT4MPTC6YHT", null, false, "super@zorya.co.in" });
 
             migrationBuilder.InsertData(
                 table: "Privileges",

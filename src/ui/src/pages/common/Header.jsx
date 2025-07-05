@@ -86,7 +86,7 @@ const Header = ({ headerToLayout, headerMenuToLayout }) => {
     return (
         <div className="app-header header-shadow">
             <div className="app-header__logo">
-                <div className="logo-src"><img src={clientLogo} alt="Rajwada" title="Rajwada" /></div>
+                <div className="logo-src"><img src={clientLogo} alt="plm" title="plm" /></div>
                 <div className="header__pane ml-auto">
                     <div>
                         <button type="button" className="hamburger close-sidebar-btn hamburger--elastic"
@@ -123,7 +123,7 @@ const Header = ({ headerToLayout, headerMenuToLayout }) => {
             </div>
             <div className={showMobileHeader ? `app-header__content header-mobile-open` : `app-header__content`}>
                 <div className="app-header-center">
-                    <div className="logo-center"><img src={clientLogo} alt="Rajwada" /></div>
+                    <div className="logo-center"><img src={clientLogo} alt="plm" /></div>
                 </div>
                 <div className="app-header-right">
                     <div className="header-dots">
@@ -158,11 +158,11 @@ const Header = ({ headerToLayout, headerMenuToLayout }) => {
                                         <Link to="/" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                             className="p-0 btn btn-link">
                                             {
-                                                (loggedInUser?.photoUrl) && <img src={profilePicture} style={{ width: "3rem", height: "3rem", margin: "auto", borderRadius: "150px" }} title='Profile Picture' alt='Rajwada bProfile Picture' />
+                                                (loggedInUser?.photoUrl) && <img src={profilePicture} style={{ width: "3rem", height: "3rem", margin: "auto", borderRadius: "150px" }} title='Profile Picture' alt='plm' />
                                             }
                                             {
                                                 (!loggedInUser?.photoUrl) && <img width="42" className="rounded-circle" src={defaultAvatar}
-                                                    alt="Rajwada_Default_User_Pic" />
+                                                    alt="plm" />
                                             }
                                             <i className="fa fa-angle-down ml-2 opacity-8"></i>
                                         </Link>
@@ -178,11 +178,11 @@ const Header = ({ headerToLayout, headerMenuToLayout }) => {
                                                             <div className="widget-content-wrapper">
                                                                 <div className="widget-content-left mr-3">
                                                                     {
-                                                                        (loggedInUser?.photoUrl) && <img src={profilePicture} style={{ width: "3rem", height: "3rem", margin: "auto", borderRadius: "150px" }} title='Profile Picture' alt='Rajwada bProfile Picture' />
+                                                                        (loggedInUser?.photoUrl) && <img src={profilePicture} style={{ width: "3rem", height: "3rem", margin: "auto", borderRadius: "150px" }} title='Profile Picture' alt='plm' />
                                                                     }
                                                                     {
                                                                         (!loggedInUser?.photoUrl) && <img width="42" className="rounded-circle" src={defaultAvatar}
-                                                                            alt="Rajwada_Default_User_Pic" />
+                                                                            alt="plm" />
                                                                     }
                                                                 </div>
                                                                 <div className="widget-content-left">
