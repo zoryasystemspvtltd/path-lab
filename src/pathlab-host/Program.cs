@@ -20,6 +20,7 @@ using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using JavaScriptEngineSwitcher.Core;
 using Serilog;
+using InventoryApi.Data;
 
 IConfigurationRoot configuration = new ConfigurationBuilder()
             .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
@@ -84,6 +85,7 @@ var connectionString = $"Server={databaseSettings.Server};" +
     
 builder.Services.AddDbContext<AuthenticationDbContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddDbContext<DbContext, ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<DbContext, InventoryDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddIdentityApiEndpoints<ApplicationUser>().AddEntityFrameworkStores<AuthenticationDbContext>();
 builder.Services.AddAuthorization();

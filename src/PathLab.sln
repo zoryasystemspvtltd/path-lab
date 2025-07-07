@@ -19,15 +19,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pathlab-api", "pathlab-api\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pathlab-host", "pathlab-host\pathlab-host.csproj", "{516D966A-B8E0-4165-8E79-680FE7E6B2B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LISConsole", "LISConsole\LISConsole.csproj", "{4E024AE4-C547-4AD8-A423-A066D0C7568B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LISConsole", "LISConsole\LISConsole.csproj", "{4E024AE4-C547-4AD8-A423-A066D0C7568B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIS.Com.Businesslogic", "LIS.Com.Businesslogic\LIS.Com.Businesslogic.csproj", "{2A783589-CF9F-4735-A777-8A8F24C28533}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LIS.Com.Businesslogic", "LIS.Com.Businesslogic\LIS.Com.Businesslogic.csproj", "{2A783589-CF9F-4735-A777-8A8F24C28533}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pathlab.logger", "pathlab.logger\pathlab.logger.csproj", "{CE84E301-87B6-4345-A96A-333FA80D23F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pathlab.logger", "pathlab.logger\pathlab.logger.csproj", "{CE84E301-87B6-4345-A96A-333FA80D23F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.com", "test.com\test.com.csproj", "{87855FA0-D12C-4C2F-8CE5-E3CB2188A282}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test.com", "test.com\test.com.csproj", "{87855FA0-D12C-4C2F-8CE5-E3CB2188A282}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIS", "LIS", "{2E522367-69A6-4842-A5B3-E3E0E388A874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory-api", "inventory-api\inventory-api.csproj", "{188CC94B-DAF6-4BCD-B897-36DCF698B50C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +111,14 @@ Global
 		{87855FA0-D12C-4C2F-8CE5-E3CB2188A282}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87855FA0-D12C-4C2F-8CE5-E3CB2188A282}.Release|x64.ActiveCfg = Release|Any CPU
 		{87855FA0-D12C-4C2F-8CE5-E3CB2188A282}.Release|x64.Build.0 = Release|Any CPU
+		{188CC94B-DAF6-4BCD-B897-36DCF698B50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188CC94B-DAF6-4BCD-B897-36DCF698B50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188CC94B-DAF6-4BCD-B897-36DCF698B50C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{188CC94B-DAF6-4BCD-B897-36DCF698B50C}.Debug|x64.Build.0 = Debug|Any CPU
+		{188CC94B-DAF6-4BCD-B897-36DCF698B50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188CC94B-DAF6-4BCD-B897-36DCF698B50C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{188CC94B-DAF6-4BCD-B897-36DCF698B50C}.Release|x64.ActiveCfg = Release|Any CPU
+		{188CC94B-DAF6-4BCD-B897-36DCF698B50C}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
