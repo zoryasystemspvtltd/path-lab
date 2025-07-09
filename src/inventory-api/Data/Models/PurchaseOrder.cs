@@ -6,11 +6,16 @@ namespace InventoryApi.Data.Models
 {
     public class PurchaseOrder : LabModel
     {   
-        public DateTime? PurchaseDate { get; set; }      
+        public DateTime? PurchaseOrderDate { get; set; }      
        
         [ForeignKey("Vendor")]
-        public virtual string? VendorId { get; set; }
+        public virtual long? VendorId { get; set; }
         [JsonIgnore]
         public virtual Vendor? Vendor { get; set; }
+
+        [JsonIgnore]
+        public virtual ICollection<GRN>? GRNs { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<PurchaseOrderItem>? PurchaseOrderItems { get; set; }
     }
 }

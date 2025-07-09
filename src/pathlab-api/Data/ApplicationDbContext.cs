@@ -25,7 +25,6 @@ public class ApplicationDbContext : DbContext
 
     #region Masters
     public virtual DbSet<Department> Departments { get; set; }
-    public virtual DbSet<Uom> Uoms { get; set; }
    
     #endregion
 
