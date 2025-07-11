@@ -1,6 +1,5 @@
 ﻿using ILab.Extensionss.Data.Models;
 using Newtonsoft.Json;
-using PathlabApi.Data.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace InventoryApi.Data.Models

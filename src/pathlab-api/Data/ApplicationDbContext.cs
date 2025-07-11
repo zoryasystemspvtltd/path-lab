@@ -24,8 +24,10 @@ public class ApplicationDbContext : DbContext
     public virtual DbSet<Attachment> Attachments { get; set; }
 
     #region Masters
+    public virtual DbSet<TestMaster> TestMasters { get; set; }
+    public virtual DbSet<TestParameter> TestParameters { get; set; }
+    public virtual DbSet<SpecimenMaster> SpecimenMasters { get; set; }
     public virtual DbSet<Department> Departments { get; set; }
-   
     #endregion
 
 }
