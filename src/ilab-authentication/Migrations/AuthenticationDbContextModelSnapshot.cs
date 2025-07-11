@@ -211,10 +211,10 @@ namespace IlabAuthentication.Migrations
                             Member = "root",
                             NormalizedEmail = "ROOT",
                             NormalizedUserName = "ROOT",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIUXHqy53Dre8nfwKZJ/mfDjLdtvMcpPO0pC7M4VwCb+K+eta6c8nxYOp21EfUbGzg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELjslJJId5s/CZUdXozgD3Pr7IbgTUn+CiLkN8o1sf2+WTJWizU2wDKXb/IPyW35/Q==",
                             PhoneNumber = "0000",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "R7JOVNY6TU5ACLDKWMJCCXJZIHNATIIJ",
+                            SecurityStamp = "3DMLAIZXSOSRUJWEQ2R7NTE7NGAAQYBA",
                             TwoFactorEnabled = false,
                             UserName = "root"
                         },
@@ -224,22 +224,22 @@ namespace IlabAuthentication.Migrations
                             AccessFailedCount = 0,
                             ConcurrencyStamp = "e6ac56cd-cb41-4059-b979-a0d7a7ac5fe0",
                             Disable = false,
-                            Email = "super@rajwada.com",
+                            Email = "super@zorya.co.in",
                             EmailConfirmed = true,
                             FirstName = "Super",
                             Key = "1536B022-C5C9-4358-BB6A-466F2075B7D4",
                             LastName = "Admin",
                             LockoutEnabled = false,
                             Member = "root",
-                            NormalizedEmail = "SUPER@RAJWADA.COM",
+                            NormalizedEmail = "SUPER@ZORYA.CO.IN",
                             NormalizedUserName = "SUPER",
                             ParentId = 1L,
-                            PasswordHash = "AQAAAAIAAYagAAAAEAvvhBeNuMBXOP4HueTG/lZiPS1ieIlXzH5CWQCcpPu1ouRK53hHwO7cuWDJg8oBzw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELjslJJId5s/CZUdXozgD3Pr7IbgTUn+CiLkN8o1sf2+WTJWizU2wDKXb/IPyW35/Q==",
                             PhoneNumber = "0000",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "P2GVVVE7O7TUFSSULMZN4QT4MPTC6YHT",
+                            SecurityStamp = "3DMLAIZXSOSRUJWEQ2R7NTE7NGAAQYBA",
                             TwoFactorEnabled = false,
-                            UserName = "super@rajwada.com"
+                            UserName = "super@zorya.co.in"
                         });
                 });
 

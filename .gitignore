@@ -53,3 +53,13 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /src/.vs
+
+**/bin/**
+**/obj/**
+**/.vs/**
+**/node_modules/**
+**/ui/build/**
+**/publish/**
+src/ui/.env
+/src/pathlab-host/logs
+/db
