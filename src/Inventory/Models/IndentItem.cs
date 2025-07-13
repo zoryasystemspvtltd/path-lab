@@ -1,23 +1,23 @@
 ﻿using ILab.Extensionss.Data.Models;
 using Newtonsoft.Json;
-using PathlabApi.Data.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace InventoryApi.Data.Models
+namespace Inventory.Models
 {
-    public class ReagentMapping : LabModel
-    {              
+    public class IndentItem : LabModel
+    {   
+        public DateTime? GRNDate { get; set; }      
        
-        [ForeignKey("TestMaster")]
-        public virtual long? TestMasterId { get; set; }
+        [ForeignKey("Indent")]
+        public virtual long? IndentId { get; set; }
         [JsonIgnore]
-        public virtual TestMaster? TestMaster { get; set; }
+        public virtual Indent? Indent { get; set; }
 
         [ForeignKey("ItemMaster")]
         public virtual long? ItemMasterId { get; set; }
         [JsonIgnore]
         public virtual ItemMaster? ItemMaster { get; set; }
        
-        public int? QuantityUsed { get; set; }
+        public int? Quantity { get; set; }
     }
 }

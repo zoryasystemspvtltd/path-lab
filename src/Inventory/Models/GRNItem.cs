@@ -2,22 +2,23 @@
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace InventoryApi.Data.Models
+namespace Inventory.Models
 {
-    public class IndentItem : LabModel
+    public class GRNItem : LabModel
     {   
         public DateTime? GRNDate { get; set; }      
        
-        [ForeignKey("Indent")]
-        public virtual long? IndentId { get; set; }
+        [ForeignKey("GRN")]
+        public virtual long? GRNId { get; set; }
         [JsonIgnore]
-        public virtual Indent? Indent { get; set; }
+        public virtual GRN? GRN { get; set; }
 
         [ForeignKey("ItemMaster")]
         public virtual long? ItemMasterId { get; set; }
         [JsonIgnore]
         public virtual ItemMaster? ItemMaster { get; set; }
-       
+        public string? BatchNo { get; set; }
+        public DateTime? Expiry { get; set; }
         public int? Quantity { get; set; }
     }
 }

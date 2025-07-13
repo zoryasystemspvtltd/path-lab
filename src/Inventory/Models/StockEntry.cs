@@ -2,11 +2,10 @@
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace InventoryApi.Data.Models
+namespace Inventory.Models
 {
-    public class StockAdjustment : LabModel
-    {    
-       
+    public class StockEntry : LabModel
+    {
         [ForeignKey("Store")]
         public virtual long? StoreId { get; set; }
         [JsonIgnore]
@@ -16,8 +15,8 @@ namespace InventoryApi.Data.Models
         public virtual long? ItemMasterId { get; set; }
         [JsonIgnore]
         public virtual ItemMaster? ItemMaster { get; set; }
-
-        public string? Reason { get; set; }
-        public int? QuantityAdjusted { get; set; }       
+        public string? BatchNo { get; set; }
+        public DateTime? Expiry { get; set; }
+        public int? QuantityAvailable { get; set; }       
     }
 }

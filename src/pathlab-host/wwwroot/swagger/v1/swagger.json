@@ -650,7 +650,9 @@
 "/api/BulkDataUpload":{"get":{"tags":["BulkDataUpload"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/BulkDataUploadItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/BulkDataUploadItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/BulkDataUploadItemList"}}}}}},"post":{"tags":["BulkDataUpload"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"text/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/BulkDataUpload/{id}":{"get":{"tags":["BulkDataUpload"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"application/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"text/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}}}}}},"put":{"tags":["BulkDataUpload"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"text/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["BulkDataUpload"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/Department":{"get":{"tags":["Department"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/DepartmentItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/DepartmentItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/DepartmentItemList"}}}}}},"post":{"tags":["Department"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Department"}},"text/json":{"schema":{"$ref":"#/components/schemas/Department"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Department"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Department/{id}":{"get":{"tags":["Department"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Department"}},"application/json":{"schema":{"$ref":"#/components/schemas/Department"}},"text/json":{"schema":{"$ref":"#/components/schemas/Department"}}}}}},"put":{"tags":["Department"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Department"}},"text/json":{"schema":{"$ref":"#/components/schemas/Department"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Department"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Department"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/ApplicationLog":{"get":{"tags":["ApplicationLog"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ApplicationLogItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLogItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLogItemList"}}}}}},"post":{"tags":["ApplicationLog"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/ApplicationLog/{id}":{"get":{"tags":["ApplicationLog"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}}}}}},"put":{"tags":["ApplicationLog"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["ApplicationLog"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
-"/api/Uom":{"get":{"tags":["Uom"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/UomItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/UomItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/UomItemList"}}}}}},"post":{"tags":["Uom"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Uom"}},"text/json":{"schema":{"$ref":"#/components/schemas/Uom"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Uom"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Uom/{id}":{"get":{"tags":["Uom"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Uom"}},"application/json":{"schema":{"$ref":"#/components/schemas/Uom"}},"text/json":{"schema":{"$ref":"#/components/schemas/Uom"}}}}}},"put":{"tags":["Uom"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Uom"}},"text/json":{"schema":{"$ref":"#/components/schemas/Uom"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Uom"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Uom"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/SpecimenMaster":{"get":{"tags":["SpecimenMaster"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/SpecimenMasterItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/SpecimenMasterItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/SpecimenMasterItemList"}}}}}},"post":{"tags":["SpecimenMaster"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/SpecimenMaster"}},"text/json":{"schema":{"$ref":"#/components/schemas/SpecimenMaster"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/SpecimenMaster"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/SpecimenMaster/{id}":{"get":{"tags":["SpecimenMaster"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/SpecimenMaster"}},"application/json":{"schema":{"$ref":"#/components/schemas/SpecimenMaster"}},"text/json":{"schema":{"$ref":"#/components/schemas/SpecimenMaster"}}}}}},"put":{"tags":["SpecimenMaster"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/SpecimenMaster"}},"text/json":{"schema":{"$ref":"#/components/schemas/SpecimenMaster"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/SpecimenMaster"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["SpecimenMaster"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/TestMaster":{"get":{"tags":["TestMaster"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/TestMasterItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/TestMasterItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/TestMasterItemList"}}}}}},"post":{"tags":["TestMaster"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/TestMaster"}},"text/json":{"schema":{"$ref":"#/components/schemas/TestMaster"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/TestMaster"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/TestMaster/{id}":{"get":{"tags":["TestMaster"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/TestMaster"}},"application/json":{"schema":{"$ref":"#/components/schemas/TestMaster"}},"text/json":{"schema":{"$ref":"#/components/schemas/TestMaster"}}}}}},"put":{"tags":["TestMaster"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/TestMaster"}},"text/json":{"schema":{"$ref":"#/components/schemas/TestMaster"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/TestMaster"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["TestMaster"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/TestParameter":{"get":{"tags":["TestParameter"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/TestParameterItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/TestParameterItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/TestParameterItemList"}}}}}},"post":{"tags":["TestParameter"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/TestParameter"}},"text/json":{"schema":{"$ref":"#/components/schemas/TestParameter"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/TestParameter"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/TestParameter/{id}":{"get":{"tags":["TestParameter"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/TestParameter"}},"application/json":{"schema":{"$ref":"#/components/schemas/TestParameter"}},"text/json":{"schema":{"$ref":"#/components/schemas/TestParameter"}}}}}},"put":{"tags":["TestParameter"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/TestParameter"}},"text/json":{"schema":{"$ref":"#/components/schemas/TestParameter"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/TestParameter"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["TestParameter"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 
   },
   "components": {
@@ -1301,10 +1303,10 @@
 },
 "additionalProperties": false
 },
-"Uom": {
+"SpecimenMaster": {
 "type": "object",
 "properties": {
-"Code": {
+"TestMasters": {
 "type": "string",
 },
 "Id": {
@@ -1336,7 +1338,7 @@
 },
 "additionalProperties": false
 },
-"UomItemList": {
+"SpecimenMasterItemList": {
 "type": "object",
 "properties": {
 "totalRecord": {
@@ -1346,7 +1348,131 @@
 "items": {
 "type": "array",
 "items": {
-"$ref": "#/components/schemas/Uom"
+"$ref": "#/components/schemas/SpecimenMaster"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"TestMaster": {
+"type": "object",
+"properties": {
+"SpecimenMasterId": {
+"type": "string",
+"nullable": true
+},
+"SpecimenMaster": {
+"type": "string",
+},
+"TestParameters": {
+"type": "string",
+},
+"TestMasters": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"TestMasterItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/TestMaster"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"TestParameter": {
+"type": "object",
+"properties": {
+"TestMasterId": {
+"type": "string",
+"nullable": true
+},
+"TestMaster": {
+"type": "string",
+},
+"NormalRange": {
+"type": "string",
+},
+"Method": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"TestParameterItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/TestParameter"
 },
 "nullable": true
 }

@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace InventoryApi.Data.Models
+namespace Inventory.Models
 {
     public class ItemMaster : LabModel
     {

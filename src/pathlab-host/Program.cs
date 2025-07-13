@@ -1,5 +1,4 @@
 using ILab.Data;
-using ILab.Extensionss.Data;
 using ILab.io;
 using IlabAuthentication;
 using IlabAuthentication.Data;
@@ -11,16 +10,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using PathlabApi.Data;
 using PathlabHost;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json;
 using React.AspNet;
 using System.Net.Mail;
 using JavaScriptEngineSwitcher.ChakraCore;
 using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
-using Microsoft.AspNetCore.SpaServices.AngularCli;
-using JavaScriptEngineSwitcher.Core;
 using Serilog;
-using InventoryApi.Data;
 
 IConfigurationRoot configuration = new ConfigurationBuilder()
             .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
@@ -85,7 +79,6 @@ var connectionString = $"Server={databaseSettings.Server};" +
     
 builder.Services.AddDbContext<AuthenticationDbContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddDbContext<DbContext, ApplicationDbContext>(options => options.UseSqlServer(connectionString));
-builder.Services.AddDbContext<DbContext, InventoryDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddIdentityApiEndpoints<ApplicationUser>().AddEntityFrameworkStores<AuthenticationDbContext>();
 builder.Services.AddAuthorization();

@@ -1,7 +1,7 @@
 ﻿using ILab.Extensionss.Data.Models;
 using Newtonsoft.Json;
 
-namespace InventoryApi.Data.Models
+namespace Inventory.Models
 {
     public class Enterprise : LabModel
     {

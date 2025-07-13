@@ -1,13 +1,13 @@
 ﻿using ILab.Extensionss.Data.Models;
-using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
-namespace InventoryApi.Data.Models
+namespace Inventory.Models
 {
     public class BusinessUnit : LabModel
-    {   
-        public string? Type { get; set; }      
-       
+    {
+        public string? Type { get; set; }
+
         [ForeignKey("Enterprise")]
         public virtual long? EnterpriseId { get; set; }
         [JsonIgnore]

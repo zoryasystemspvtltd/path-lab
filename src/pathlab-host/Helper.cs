@@ -7,6 +7,7 @@ using IlabAuthentication.Data.Models;
 using Microsoft.AspNetCore.Identity;
 using PathlabApi.Data;
 using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 using System.Security.Claims;
 using System.Text;
 
@@ -21,8 +22,8 @@ public class Helper
 
         string text = File.ReadAllText(templateFile);
 
-        text = text.Replace("\"DYNAMIC_PROPERTY\": \"DUMMY\"", GenerateDynamicComponent());
-
+        text = text.Replace("\"DYNAMIC_PROPERTY\": \"DUMMY\"", GenerateDynamicComponent(typeof(PathLabDataHandler).Assembly));
+       // text = text.Replace("\"DYNAMIC_PROPERTY\": \"DUMMY\"", GenerateDynamicComponent(typeof(Inventory).Assembly));
         text = text.Replace("\"DYNAMIC_PATH\": \"DUMMY\"", GenerateDynamicPath());
 
 
@@ -114,9 +115,8 @@ public class Helper
         }
         return sb.ToString();
     }
-    private static string GenerateDynamicComponent()
+    private static string GenerateDynamicComponent(Assembly asm)
     {
-        var asm = typeof(PathLabDataHandler).Assembly;
 
         StringBuilder sb = new StringBuilder();
 
@@ -248,7 +248,7 @@ public class PrivilegeMiddleware : IMiddleware
                      (u, r) => new { u.UserId, r.Privileges })
                  .Where(u => u.UserId == loggedInUser.Id)
                  .SelectMany(p => p.Privileges)
-                 .Select(p => new PrivilegeDetails() { Module = p.Module, Name = p.Name,Type=p.Type })
+                 .Select(p => new PrivilegeDetails() { Module = p.Module, Name = p.Name, Type = p.Type })
                  .Distinct()
                  .OrderBy(o => o.Module)
                  .ThenBy(o => o.Name)
@@ -285,7 +285,7 @@ public class ModuleIdentityMiddleware : IMiddleware
             var loggedInUser = await _userManager.GetUserAsync(user);
             var identity = new PathlabApi.Data.ModuleIdentity(loggedInUser.Email, loggedInUser.Key);
 
-            var privilegeClaims= new List<Claim>();
+            var privilegeClaims = new List<Claim>();
             privilegeClaims.Add(new Claim("activity-member", $"{identity.Member}"));
             privilegeClaims.Add(new Claim("activity-key", $"{identity.Key}"));
             var appIdentity = new ClaimsIdentity(privilegeClaims);
