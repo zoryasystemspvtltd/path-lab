@@ -31,7 +31,6 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\ilab-authentication\ilab-authentication.csproj" />
-		<ProjectReference Include="..\inventory-api\inventory-api.csproj" />
 		<ProjectReference Include="..\pathlab-api\pathlab-api.csproj" />
 	</ItemGroup>
 

@@ -1,5 +1,4 @@
 ﻿using ILab.Extensions;
-using ILab.Extensionss.Data;
 using ILab.Extensionss.Data.Models;
 using IlabAuthentication;
 using IlabAuthentication.Data;
@@ -10,7 +9,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using System.Security.Claims;
 using System.Text;
-
+using Inventory;
 namespace PathlabHost;
 
 public class Helper
@@ -20,10 +19,9 @@ public class Helper
         var templateFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "swagger", "v1", "swagger.template");
         var swaggerFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "swagger", "v1", "swagger.json");
 
-        string text = File.ReadAllText(templateFile);
+        string text = File.ReadAllText(templateFile);        
 
-        text = text.Replace("\"DYNAMIC_PROPERTY\": \"DUMMY\"", GenerateDynamicComponent(typeof(PathLabDataHandler).Assembly));
-       // text = text.Replace("\"DYNAMIC_PROPERTY\": \"DUMMY\"", GenerateDynamicComponent(typeof(Inventory).Assembly));
+        text = text.Replace("\"DYNAMIC_PROPERTY\": \"DUMMY\"", GenerateDynamicComponent());
         text = text.Replace("\"DYNAMIC_PATH\": \"DUMMY\"", GenerateDynamicPath());
 
 
@@ -32,8 +30,7 @@ public class Helper
         return "/swagger/v1/swagger.json"; ;
     }
     private static string GenerateDynamicPath()
-    {
-        var asm = typeof(PathLabDataHandler).Assembly;
+    {        
         StringBuilder sb = new StringBuilder();
 
         string template = "\"/api/@@MODULE_NAME@@\"" +
@@ -109,94 +106,112 @@ public class Helper
             ":{\"schema\"" +
             ":{\"type\":\"integer\",\"format\":\"int32\"}}}}}}},";
 
+        var asm = typeof(PathLabDataHandler).Assembly;
+        foreach (var type in asm.GetTypes().Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(LabModel))))
+        {
+            sb.AppendLine(template.Replace("@@MODULE_NAME@@", type.Name));
+        }
+
+        asm = typeof(InventoryDataHandler).Assembly;
         foreach (var type in asm.GetTypes().Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(LabModel))))
         {
             sb.AppendLine(template.Replace("@@MODULE_NAME@@", type.Name));
         }
         return sb.ToString();
     }
-    private static string GenerateDynamicComponent(Assembly asm)
+    private static string GenerateDynamicComponent()
     {
-
         StringBuilder sb = new StringBuilder();
-
+        var asm = typeof(PathLabDataHandler).Assembly;
         foreach (var type in asm.GetTypes().Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(LabModel))))
         {
-            sb.AppendLine($"\"{type.Name}\": {{"); // 1
-            sb.AppendLine("\"type\": \"object\",");
-            sb.AppendLine("\"properties\": {");//2
-            foreach (var property in type.GetProperties())
-            {
-                if (property.Name == "Status")
-                {
-                    sb.AppendLine("\"status\": {");//3
-                    sb.AppendLine("\"$ref\": \"#/components/schemas/StatusType\"");
-                    sb.AppendLine("},");//-3
-                }
-                else
-                {
-                    sb.AppendLine($"\"{property.Name}\": {{");//3
-                    sb.AppendLine($"\"type\": \"{GetPropertyType(property.PropertyType.Name)}\",");
-                    if (property.PropertyType.Name == "Int32")
-                    {
-                        sb.AppendLine("\"format\": \"int32\",");
-                    }
-
-                    if (property.PropertyType.Name == "Nullable`1")
-                    {
-                        var genericArgument = property.PropertyType.GenericTypeArguments.FirstOrDefault(p => p.Name == "DateTime");
-                        if (genericArgument != null)
-                        {
-                            sb.AppendLine("\"format\": \"date-time\",");
-                        }
-
-                    }
-
-                    var sttr = property
-                      .GetCustomAttributes(false)
-                      .ToDictionary(a => a.GetType().Name, a => a)
-                      .FirstOrDefault(a => a.Key == "StringLengthAttribute");
-                    if (sttr.Key != null)
-                    {
-                        sb.AppendLine($"\"maxLength\": {((StringLengthAttribute)sttr.Value).MaximumLength},");
-                        sb.AppendLine($"\"minLength\": {((StringLengthAttribute)sttr.Value).MinimumLength},");
-                    }
-
-                    if (Nullable.GetUnderlyingType(property.PropertyType) != null)
-                    {
-                        sb.AppendLine("\"nullable\": true");
-                    }
-
-                    sb.AppendLine("},");//-3
-                }
-            }
-            sb.AppendLine("},");//-2
-            sb.AppendLine("\"additionalProperties\": false");
-            sb.AppendLine("},");//-1
-
-            sb.AppendLine($"\"{type.Name}ItemList\": {{");//1
-            sb.AppendLine("\"type\": \"object\",");
-            sb.AppendLine("\"properties\": {");//2
-            sb.AppendLine("\"totalRecord\": {");//3
-            sb.AppendLine("\"type\": \"integer\",");
-            sb.AppendLine("\"format\": \"int32\"");
-            sb.AppendLine("},");//-3
-            sb.AppendLine("\"items\": {");//3
-            sb.AppendLine("\"type\": \"array\",");
-            sb.AppendLine("\"items\": {");//4
-            sb.AppendLine($"\"$ref\": \"#/components/schemas/{type.Name}\"");
-            sb.AppendLine("},");//-4
-            sb.AppendLine("\"nullable\": true");
-            sb.AppendLine("}");//-3
-            sb.AppendLine("},");//-2
-            sb.AppendLine("\"additionalProperties\": false");
-            sb.AppendLine("},");//-1
-
+           sb= GenerateSwaggerContent(sb, type);  
         }
 
+        asm = typeof(InventoryDataHandler).Assembly;
+        foreach (var type in asm.GetTypes().Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(LabModel))))
+        {
+            sb = GenerateSwaggerContent(sb, type);
+        }
 
         return sb.ToString();
     }
+
+    private static StringBuilder GenerateSwaggerContent(StringBuilder sb, Type type)
+    {
+        sb.AppendLine($"\"{type.Name}\": {{"); // 1
+        sb.AppendLine("\"type\": \"object\",");
+        sb.AppendLine("\"properties\": {");//2
+        foreach (var property in type.GetProperties())
+        {
+            if (property.Name == "Status")
+            {
+                sb.AppendLine("\"status\": {");//3
+                sb.AppendLine("\"$ref\": \"#/components/schemas/StatusType\"");
+                sb.AppendLine("},");//-3
+            }
+            else
+            {
+                sb.AppendLine($"\"{property.Name}\": {{");//3
+                sb.AppendLine($"\"type\": \"{GetPropertyType(property.PropertyType.Name)}\",");
+                if (property.PropertyType.Name == "Int32")
+                {
+                    sb.AppendLine("\"format\": \"int32\",");
+                }
+
+                if (property.PropertyType.Name == "Nullable`1")
+                {
+                    var genericArgument = property.PropertyType.GenericTypeArguments.FirstOrDefault(p => p.Name == "DateTime");
+                    if (genericArgument != null)
+                    {
+                        sb.AppendLine("\"format\": \"date-time\",");
+                    }
+
+                }
+
+                var sttr = property
+                  .GetCustomAttributes(false)
+                  .ToDictionary(a => a.GetType().Name, a => a)
+                  .FirstOrDefault(a => a.Key == "StringLengthAttribute");
+                if (sttr.Key != null)
+                {
+                    sb.AppendLine($"\"maxLength\": {((StringLengthAttribute)sttr.Value).MaximumLength},");
+                    sb.AppendLine($"\"minLength\": {((StringLengthAttribute)sttr.Value).MinimumLength},");
+                }
+
+                if (Nullable.GetUnderlyingType(property.PropertyType) != null)
+                {
+                    sb.AppendLine("\"nullable\": true");
+                }
+
+                sb.AppendLine("},");//-3
+            }
+        }
+        sb.AppendLine("},");//-2
+        sb.AppendLine("\"additionalProperties\": false");
+        sb.AppendLine("},");//-1
+
+        sb.AppendLine($"\"{type.Name}ItemList\": {{");//1
+        sb.AppendLine("\"type\": \"object\",");
+        sb.AppendLine("\"properties\": {");//2
+        sb.AppendLine("\"totalRecord\": {");//3
+        sb.AppendLine("\"type\": \"integer\",");
+        sb.AppendLine("\"format\": \"int32\"");
+        sb.AppendLine("},");//-3
+        sb.AppendLine("\"items\": {");//3
+        sb.AppendLine("\"type\": \"array\",");
+        sb.AppendLine("\"items\": {");//4
+        sb.AppendLine($"\"$ref\": \"#/components/schemas/{type.Name}\"");
+        sb.AppendLine("},");//-4
+        sb.AppendLine("\"nullable\": true");
+        sb.AppendLine("}");//-3
+        sb.AppendLine("},");//-2
+        sb.AppendLine("\"additionalProperties\": false");
+        sb.AppendLine("},");//-1
+
+        return sb;
+    }
+
     private static string GetPropertyType(string name)
     {
         switch (name)
