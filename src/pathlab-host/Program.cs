@@ -1,5 +1,4 @@
 using ILab.Data;
-using ILab.Extensionss.Data;
 using ILab.io;
 using IlabAuthentication;
 using IlabAuthentication.Data;
@@ -11,14 +10,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using PathlabApi.Data;
 using PathlabHost;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json;
 using React.AspNet;
 using System.Net.Mail;
 using JavaScriptEngineSwitcher.ChakraCore;
 using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
-using Microsoft.AspNetCore.SpaServices.AngularCli;
-using JavaScriptEngineSwitcher.Core;
 using Serilog;
 
 IConfigurationRoot configuration = new ConfigurationBuilder()

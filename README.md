@@ -10,3 +10,4 @@ Update-Database -Project ilab-authentication -StartupProject pathlab-host -Conte
 
 Add-Migration -Project pathlab-api -Startup pathlab-host -Context PathlabApi.Data.ApplicationDbContext
 Update-Database -Project pathlab-api -StartupProject pathlab-host -Context PathlabApi.Data.ApplicationDbContext
+
