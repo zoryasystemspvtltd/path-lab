@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Alert, Button, Col, Form, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from "react-router-dom";
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/zorya_logo.png';
 import { useAuth } from "../provider/authProvider";
 import { loginUser } from "../store/api-db";
 
@@ -22,7 +22,7 @@ const Login = () => {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = '/static/theme/red/theme.css'; // Red theme CSS
+        link.href = '/static/theme/cyan/theme.css'; // Default Cyan theme CSS
         link.id = 'theme-link';
 
         const existingLink = document.getElementById('theme-link');
@@ -97,8 +97,8 @@ const Login = () => {
 
                 <div className="mx-auto app-login-box">
                     <div className="app-logo">
-                        {/* <img src={logo} alt='logo' /> */}
-                        <h3 className="text-bold">PATHLAB SOFTWARE</h3>
+                        <img src={logo} alt='logo' />
+                        <h3 className="m-4"><strong>PATHLAB SOFTWARE</strong></h3>
                     </div>
 
                     <h2 className="mb-0 text-center">
@@ -141,7 +141,7 @@ const Login = () => {
                                     {notice}
                                 </Alert>
                             }
-                            <Col md={12} className="mt-4">
+                            <Col md={12} className="mt-3">
                                 <Button
                                     variant="contained"
                                     className="btn-wide btn-pill btn-shadow btn-hover-shine btn btn-primary btn-lg w-100"

@@ -19,6 +19,8 @@ import { AddDepartment, EditDepartment, ListDepartment, ViewDepartment } from ".
 
 import { useAuth } from "../provider/authProvider";
 import { ProtectedRoute } from "./ProtectedRoute";
+import { AddEnterprise, EditEnterprise, ListEnterprise, ViewEnterprise } from "../pages/app/schema/Enterprises";
+import { AddBusinessUnit, EditBusinessUnit, ViewBusinessUnit, ListBusinessUnit } from "../pages/app/schema/BusinessUnits";
 
 const Routes = () => {
     const { token } = useAuth();
@@ -120,6 +122,40 @@ const Routes = () => {
                 {
                     path: "/departments/add",
                     element: <AddDepartment />
+                },
+
+                {
+                    path: "/enterprises",
+                    element: <ListEnterprise />
+                },
+                {
+                    path: "/enterprises/:id",
+                    element: <ViewEnterprise />
+                },
+                {
+                    path: "/enterprises/:id/edit",
+                    element: <EditEnterprise />
+                },
+                {
+                    path: "/enterprises/add",
+                    element: <AddEnterprise />
+                },
+
+                {
+                    path: "/businessunits",
+                    element: <ListBusinessUnit />
+                },
+                {
+                    path: "/businessunits/:id",
+                    element: <ViewBusinessUnit />
+                },
+                {
+                    path: "/businessunits/:id/edit",
+                    element: <EditBusinessUnit />
+                },
+                {
+                    path: "/businessunits/add",
+                    element: <AddBusinessUnit />
                 },
             ],
         },

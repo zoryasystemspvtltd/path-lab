@@ -1,11 +1,9 @@
-import { useState, useEffect } from "react";
-import { Alert, Button, Col, Form, Row } from 'react-bootstrap';
-import { Link, useNavigate } from "react-router-dom";
-import logo from '../assets/images/logo.png';
-import ICarousel from "./common/ICarousel";
-import { useDispatch } from 'react-redux'
+import { useEffect, useState } from "react";
+import { Alert, Button } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
-import api from '../store/api-service'
+import { useDispatch } from 'react-redux';
+import { useNavigate } from "react-router-dom";
+import api from '../store/api-service';
 
 const IUIResetPasswordElement = (props) => {
     const [show, setShow] = useState(false);

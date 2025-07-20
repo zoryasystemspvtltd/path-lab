@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Col, Form, Row } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from "react-router-dom";
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/zorya_logo.png';
 import api from '../store/api-service';
 import ICarousel from "./common/ICarousel";
 
@@ -17,7 +17,7 @@ const ForgotPassword = () => {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = '/static/theme/red/theme.css'; // Red theme CSS
+        link.href = '/static/theme/cyan/theme.css'; // Default Cyan theme CSS
         link.id = 'theme-link';
 
         const existingLink = document.getElementById('theme-link');

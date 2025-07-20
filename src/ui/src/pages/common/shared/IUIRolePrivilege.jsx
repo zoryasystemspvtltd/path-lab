@@ -33,18 +33,18 @@ const IUIRolePrivilege = (props) => {
             let items = response?.data
 
             // Replacing hardcoded plan type with Tower Floor Flat
-            const planIndex = items?.findIndex(item => `${item.name}` === `Plan`)
-            const planItems = [
-                { name: "plan", type: "tower", isApproval: items[planIndex].isApproval, isAssignable: items[planIndex].isAssignable, isCompany: items[planIndex].isCompany, isProject: items[planIndex].isProject },
-                { name: "plan", type: "floor", isApproval: items[planIndex].isApproval, isAssignable: items[planIndex].isAssignable, isCompany: items[planIndex].isCompany, isProject: items[planIndex].isProject },
-                { name: "plan", type: "flat", isApproval: items[planIndex].isApproval, isAssignable: items[planIndex].isAssignable, isCompany: items[planIndex].isCompany, isProject: items[planIndex].isProject }
-            ]
+            // const planIndex = items?.findIndex(item => `${item.name}` === `Plan`)
+            // const planItems = [
+            //     { name: "plan", type: "tower", isApproval: items[planIndex].isApproval, isAssignable: items[planIndex].isAssignable, isCompany: items[planIndex].isCompany, isProject: items[planIndex].isProject },
+            //     { name: "plan", type: "floor", isApproval: items[planIndex].isApproval, isAssignable: items[planIndex].isAssignable, isCompany: items[planIndex].isCompany, isProject: items[planIndex].isProject },
+            //     { name: "plan", type: "flat", isApproval: items[planIndex].isApproval, isAssignable: items[planIndex].isAssignable, isCompany: items[planIndex].isCompany, isProject: items[planIndex].isProject }
+            // ]
 
-            items = [
-                ...items?.slice(0, planIndex), // everything before array
-                ...items?.slice(planIndex + 1), // everything after array
-                ...planItems
-            ]
+            // items = [
+            //     ...items?.slice(0, planIndex), // everything before array
+            //     ...items?.slice(planIndex + 1), // everything after array
+            //     ...planItems
+            // ]
 
             let modulePrivileges = [
                 { id: 998, name: 'user', type: 'user', text: "User", items: privileges },
