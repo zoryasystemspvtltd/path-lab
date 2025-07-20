@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import defaultAvatar from "../../assets/images/avatars/man.png";
 import dropDownCity3 from "../../assets/images/dropdown-header/city3.jpg";
-import clientLogo from "../../assets/images/logo.png";
+import clientLogo from "../../assets/images/zorya_logo.png";
 import { useAuth } from "../../provider/authProvider";
 import { loginUser } from "../../store/api-db";
 import IUIHeaderMenu from "./IUIHeaderMenu";
@@ -20,7 +20,7 @@ const Header = ({ headerToLayout, headerMenuToLayout }) => {
     const loggedInUser = useSelector((state) => state.api.loggedInUser);
     const [profilePicture, setProfilePicture] = useState([]);
     // Get the theme from localStorage or set the default to 'theme1'
-    const savedTheme = loggedInUser?.theme || 'red';
+    const savedTheme = loggedInUser?.theme || 'cyan';
     const [theme, setTheme] = useState(savedTheme);
 
     const menuToHeader = (roleName) => {
@@ -66,8 +66,8 @@ const Header = ({ headerToLayout, headerMenuToLayout }) => {
     useEffect(() => {
         if (loggedInUser !== undefined) {
             setProfilePicture(loggedInUser?.photoUrl);
-            setTheme(loggedInUser?.theme || 'red');
-            loadTheme(loggedInUser?.theme || 'red');
+            setTheme(loggedInUser?.theme || 'cyan');
+            loadTheme(loggedInUser?.theme || 'cyan');
         }
     }, [loggedInUser]);
 
@@ -138,6 +138,7 @@ const Header = ({ headerToLayout, headerMenuToLayout }) => {
                                 onChange={handleThemeChange}
                             >
                                 <option value="red">Red</option>
+                                <option value="cyan">Cyan</option>
                                 <option value="light">Light</option>
                                 <option value="dark">Dark</option>
                                 <option value="blue">Blue</option>
@@ -166,7 +167,7 @@ const Header = ({ headerToLayout, headerMenuToLayout }) => {
                                             }
                                             <i className="fa fa-angle-down ml-2 opacity-8"></i>
                                         </Link>
-                                        <div tabIndex="-1" role="menu" aria-hidden="true"
+                                        <div tabIndex="-1" role="menu"
                                             className="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
                                             <div className="dropdown-menu-header">
                                                 <div className="dropdown-menu-header-inner bg-info">

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Alert, Button, Col, Form, Row } from 'react-bootstrap';
 import { Link, useNavigate } from "react-router-dom";
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/zorya_logo.png';
 import ICarousel from "./common/ICarousel";
 
 const ResetPassword = () => {
