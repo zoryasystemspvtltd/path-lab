@@ -12,7 +12,7 @@ using PathlabApi.Data;
 namespace PathlabApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250713051551_initial")]
+    [Migration("20250726110557_initial")]
     partial class initial
     {
         /// <inheritdoc />

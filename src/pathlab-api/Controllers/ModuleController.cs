@@ -1,5 +1,6 @@
 ﻿using ILab.Data;
 using ILab.Extensionss.Data.Models;
+using Inventory;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PathlabApi.Data.Models;
@@ -19,22 +20,32 @@ public class ModuleController : ControllerBase
     [HttpGet()]
     public List<PathlabModule> Get()
     {
-        var asm = typeof(PathLabDataService).Assembly;
-        var type1 = asm.GetTypes()
-            .Where(p => p.IsSubclassOf(typeof(LabModel)))
-            //.Select(p => new RajModule() { Name = p.Name, IsAssignable = p.BaseType == typeof(IAssignable) })
-            .ToList();
-        var type = asm.GetTypes()
+        var asm1 = typeof(PathLabDataService).Assembly;
+        var asm2 = typeof(InventoryDataHandler).Assembly;
+        var type1 = asm1.GetTypes()
+             .Where(p => p.IsSubclassOf(typeof(LabModel)))
+             .Select(p => new PathlabModule()
+             {
+                 Name = p.Name,
+                 IsAssignable = p.GetInterfaces().Count(a => a == typeof(IAssignable)) > 0,
+                 IsApproval = p.GetInterfaces().Count(a => a == typeof(IApproval)) > 0
+             })
+             .ToList();
+        var type2 = asm2.GetTypes()
             .Where(p => p.IsSubclassOf(typeof(LabModel)))
             .Select(p => new PathlabModule()
             {
                 Name = p.Name,
-                IsAssignable = p.GetInterfaces().Count(a => a == typeof(IAssignable)) > 0,               
+                IsAssignable = p.GetInterfaces().Count(a => a == typeof(IAssignable)) > 0,
                 IsApproval = p.GetInterfaces().Count(a => a == typeof(IApproval)) > 0
             })
             .ToList();
+       
+        var combinedList = new List<PathlabModule>();
+        combinedList.AddRange(type1);
+        combinedList.AddRange(type2);
 
-        return type;
+        return combinedList;
     }
 }
 
