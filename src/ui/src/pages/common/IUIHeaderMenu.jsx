@@ -26,7 +26,7 @@ const IUIHeaderMenu = (props) => {
         }
 
         if (s.access) {
-            if (privileges?.some(p => p.module === s.access)) {
+            if (privileges?.some(p => p.module !== s.access)) {
                 return true;
             }
             else {

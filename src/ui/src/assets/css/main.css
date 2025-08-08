@@ -409,7 +409,7 @@ table.fancytree-ext-table.fancytree-treefocus tbody tr.fancytree-active {outline
 .app-header.header-text-light .app-header-right .icon-wrapper-alt .badge-dot { border-color:transparent }
 .app-header.header-text-light .search-wrapper .close::before, 
 .app-header.header-text-light .search-wrapper .close::after, 
-.app-header.header-text-light .app-header__logo .logo-src { background:url(../images/logo.png) }
+.app-header.header-text-light .app-header__logo .logo-src { background:url(../images/zorya_logo.png) }
 .app-header.header-text-dark .app-header-right .icon-wrapper-alt .fa,
 .app-header.header-text-dark .app-header-right .icon-wrapper-alt .icon { transition:all .2s}
 .app-header.header-text-dark .app-header-right .icon-wrapper-alt .icon-wrapper-bg { transition:all .2s;opacity:1 }
@@ -452,7 +452,7 @@ table.fancytree-ext-table.fancytree-treefocus tbody tr.fancytree-active {outline
 .app-sidebar.sidebar-text-light .vertical-nav-menu li a i.metismenu-state-icon { opacity:.5 }
 .app-sidebar.sidebar-text-light .vertical-nav-menu li a:hover i.metismenu-icon { opacity:.8 }
 .app-sidebar.sidebar-text-light .vertical-nav-menu li a:hover i.metismenu-state-icon { opacity:1 }
-.app-sidebar.sidebar-text-light .app-header__logo .logo-src { background:url(../images/logo.png) }
+.app-sidebar.sidebar-text-light .app-header__logo .logo-src { background:url(../images/zorya_logo.png) }
 .app-sidebar.sidebar-text-dark { border-right:0!important }
 .app-sidebar.sidebar-text-dark .vertical-nav-menu li a i.metismenu-icon { opacity:.5 }
 .app-sidebar.sidebar-text-dark .vertical-nav-menu li a i.metismenu-state-icon { opacity:.5 }
@@ -1335,7 +1335,7 @@ legend {font-size:.88rem; font-weight:700 }
 
 /*------------- App Logo -------------------------*/
 .app-logo img { width:30%; }
-.app-logo-inverse { height:23px; width:97px; background:url(../images/logo.png); }
+.app-logo-inverse { height:23px; width:97px; background:url(../images/zorya_logo.png); }
 .app-login-box {padding: 30px; max-width: 500px; z-index: 100;  margin: auto; /* height: 440px; */  height: 520px; position: absolute;  top: 0;  right: 0; bottom: 0;  left: 0;  /* padding: 20px 20px 0 20px; */ border-radius: 20px; -webkit-box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.21);  -moz-box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.21);  box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.21);}
 .app-login-box .app-logo { margin-bottom:1.5rem ; text-align: center;}
 /* .app-login-box h4 { margin-bottom:1.5rem; font-weight:400 }
@@ -1344,7 +1344,7 @@ legend {font-size:.88rem; font-weight:700 }
 .app-login-box .icon-fa {position: absolute; top: 36px; left: 15px;  font-size: 24px; color: #6b6b6b; }
 .app-login-box .icon-input {padding-left: 50px; margin-top: 5px;  height: 45px;  border-radius: 10px; font-size: 17px;}
 /* .app-login .carousel-item img { height: 100vh; background-size: cover;  opacity: .9;} */
-.app-login.app-theme-login-bg {background:url(../images/login-screen-bg.jpg) no-repeat;  height: 100vh; background-size: cover;  }
+.app-login.app-theme-login-bg {background:url(../images/login-screen-bg-old.jpg) no-repeat;  height: 100vh; background-size: cover;  }
 
 .app-inner-layout.rm-sidebar .app-inner-layout__wrapper .app-inner-layout__content { width:auto; float:none }
 .app-inner-layout .app-inner-layout__header { width:100%; padding:1.5rem; text-align:left; border-bottom:solid 1px }

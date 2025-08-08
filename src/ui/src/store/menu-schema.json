@@ -25,18 +25,18 @@
                 "access": "user"
             },
             {
-                "name": "companyManagement",
-                "text": "Company",
+                "name": "enterpriseManagement",
+                "text": "Enterprise",
                 "icon": "cubes-stacked",
-                "path": "/companies",
-                "access": "company"
+                "path": "/enterprises",
+                "access": "enterprise"
             },
             {
-                "name": "projectManagement",
-                "text": "Project",
+                "name": "businessUnitManagement",
+                "text": "Business Unit",
                 "icon": "sitemap",
-                "path": "/projects",
-                "access": "project"
+                "path": "/businessunits",
+                "access": "businessunit"
             }
         ],
         "transaction": [
@@ -56,8 +56,8 @@
             }
         ]
     },
-    "civil": {
-        "text": "Civil",
+    "inventory": {
+        "text": "Inventory",
         "icon": "screwdriver-wrench",
         "master": [
             {
@@ -191,56 +191,6 @@
                 "text": "Site Material Approval",
                 "icon": "vector-square",
                 "path": "/site-material-approval-report"
-            }
-        ]
-    },
-    "legal": {
-        "text": "Legal",
-        "icon": "user-tie",
-        "master": [
-            {
-                "name": "mouza",
-                "text": "Mouza",
-                "icon": "cubes-stacked",
-                "path": "/mouzas",
-                "access": "mouza"
-            },
-            {
-                "name": "rsDaag",
-                "text": "RS Master",
-                "icon": "cubes-stacked",
-                "path": "/rsdaags",
-                "access": "rsDaag"
-            },
-            {
-                "name": "nameMaster",
-                "text": "Name Master",
-                "icon": "cubes-stacked",
-                "path": "/nameMasters",
-                "access": "nameMaster"
-            },
-            {
-                "name": "wonership",
-                "text": "Woner Ship",
-                "icon": "cubes-stacked",
-                "path": "/mouzas",
-                "access": "mouza"
-            }
-        ],
-        "transaction": [
-            {
-                "name": "legalTransaction1",
-                "text": "Legal Transaction 1",
-                "icon": "vector-square",
-                "path": "/home"
-            }
-        ],
-        "report": [
-            {
-                "name": "legalReport",
-                "text": "Legal",
-                "icon": "vector-square",
-                "path": "/home"
             }
         ]
     }
