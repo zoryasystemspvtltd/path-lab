@@ -1,5 +1,6 @@
 ﻿using ILab.Extensionss.Data;
 using ILab.Extensionss.Data.Models;
+using Inventory;
 using Newtonsoft.Json;
 using PathlabApi.Data;
 
@@ -32,6 +33,15 @@ namespace ILab.Data
             var type = asm.GetTypes()
                 .FirstOrDefault(p => p.Name.Equals(model, StringComparison.OrdinalIgnoreCase)
                     && p.IsSubclassOf(typeof(LabModel)));
+
+            if (type == null)
+            {
+                var asm2 = typeof(InventoryDataHandler).Assembly;
+                type = asm2.GetTypes()
+                .FirstOrDefault(p => p.Name.Equals(model, StringComparison.OrdinalIgnoreCase)
+                    && p.IsSubclassOf(typeof(LabModel)));
+            }
+                
 
             if (type == null) { return null; }
 
