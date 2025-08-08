@@ -1518,6 +1518,12 @@
 "Stores": {
 "type": "string",
 },
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
 "Id": {
 "type": "string",
 },
@@ -1568,6 +1574,12 @@
 "type": "object",
 "properties": {
 "BusinessUnits": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
 "type": "string",
 },
 "Id": {
@@ -1622,6 +1634,12 @@
 "ItemMasters": {
 "type": "string",
 },
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
 "Id": {
 "type": "string",
 },
@@ -1672,6 +1690,12 @@
 "type": "object",
 "properties": {
 "ItemMasters": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
 "type": "string",
 },
 "Id": {
@@ -1727,6 +1751,12 @@
 "type": "string",
 },
 "PurchaseOrders": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
 "type": "string",
 },
 "Id": {
@@ -1798,6 +1828,12 @@
 "type": "string",
 },
 "GRNItems": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
 "type": "string",
 },
 "Id": {
@@ -1880,6 +1916,12 @@
 "type": "string",
 "nullable": true
 },
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
 "Id": {
 "type": "string",
 },
@@ -1942,6 +1984,12 @@
 "type": "string",
 },
 "IndentItems": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
 "type": "string",
 },
 "Id": {
@@ -2015,6 +2063,12 @@
 "Quantity": {
 "type": "string",
 "nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
 },
 "Id": {
 "type": "string",
@@ -2103,6 +2157,12 @@
 "ReagentMappings": {
 "type": "string",
 },
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
 "Id": {
 "type": "string",
 },
@@ -2168,6 +2228,12 @@
 "type": "string",
 },
 "PurchaseOrderItems": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
 "type": "string",
 },
 "Id": {
@@ -2244,6 +2310,12 @@
 "GRNs": {
 "type": "string",
 },
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
 "Id": {
 "type": "string",
 },
@@ -2307,6 +2379,12 @@
 "QuantityUsed": {
 "type": "string",
 "nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
 },
 "Id": {
 "type": "string",
@@ -2378,6 +2456,12 @@
 "type": "string",
 "nullable": true
 },
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
 "Id": {
 "type": "string",
 },
@@ -2446,6 +2530,12 @@
 "QuantityUsed": {
 "type": "string",
 "nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
 },
 "Id": {
 "type": "string",
@@ -2522,6 +2612,12 @@
 "type": "string",
 "nullable": true
 },
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
 "Id": {
 "type": "string",
 },
@@ -2582,6 +2678,12 @@
 "type": "string",
 },
 "StockEntries": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
 "type": "string",
 },
 "Id": {

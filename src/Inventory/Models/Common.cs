@@ -3,11 +3,7 @@ using Newtonsoft.Json;
 
 namespace Inventory.Models
 {
-    public abstract class PathLabModel : LabModel
-    {
-        public virtual string? Code { get; set; }
-        public virtual string? Description { get; set; }
-    }
+    
     public class Enterprise : PathLabModel
     {
         [JsonIgnore]
