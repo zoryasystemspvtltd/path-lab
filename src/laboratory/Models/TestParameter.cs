@@ -1,10 +1,11 @@
 ﻿using ILab.Extensionss.Data.Models;
+using Laboratory;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Laboratory.Data.Models
+namespace Laboratory.Models
 {
-    public class TestParameter : LabModel
+    public class TestParameter : LaboratoryModel
     { 
         [ForeignKey("TestMaster")]
         public virtual long? TestMasterId { get; set; }
