@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class PurchaseOrder : LabModel
+    public class PurchaseOrder : PathLabModel
     {   
         public DateTime? PurchaseOrderDate { get; set; }      
        

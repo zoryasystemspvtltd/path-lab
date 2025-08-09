@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class StockConsumption : LabModel
+    public class StockConsumption : PathLabModel
     {    
               
         public virtual long? TestId { get; set; }

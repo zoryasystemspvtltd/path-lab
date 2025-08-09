@@ -21,7 +21,7 @@ public class ModuleController : ControllerBase
     public List<PathlabModule> Get()
     {
         var asm1 = typeof(PathLabDataService).Assembly;
-        var asm2 = typeof(InventoryDataHandler).Assembly;
+        var asm2 = typeof(PathLabModel).Assembly;
         var type1 = asm1.GetTypes()
              .Where(p => p.IsSubclassOf(typeof(LabModel)))
              .Select(p => new PathlabModule()

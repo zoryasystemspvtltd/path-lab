@@ -112,7 +112,7 @@ public class Helper
             sb.AppendLine(template.Replace("@@MODULE_NAME@@", type.Name));
         }
 
-        asm = typeof(InventoryDataHandler).Assembly;
+        asm = typeof(PathLabModel).Assembly;
         foreach (var type in asm.GetTypes().Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(LabModel))))
         {
             sb.AppendLine(template.Replace("@@MODULE_NAME@@", type.Name));
@@ -128,7 +128,7 @@ public class Helper
            sb= GenerateSwaggerContent(sb, type);  
         }
 
-        asm = typeof(InventoryDataHandler).Assembly;
+        asm = typeof(PathLabModel).Assembly;
         foreach (var type in asm.GetTypes().Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(LabModel))))
         {
             sb = GenerateSwaggerContent(sb, type);

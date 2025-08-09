@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class ReagentMapping : LabModel
+    public class ReagentMapping : PathLabModel
     {              
        
         public virtual long? TestId { get; set; }

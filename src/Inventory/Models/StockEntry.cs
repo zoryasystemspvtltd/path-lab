@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class StockEntry : LabModel
+    public class StockEntry : PathLabModel
     {
         [ForeignKey("Store")]
         public virtual long? StoreId { get; set; }

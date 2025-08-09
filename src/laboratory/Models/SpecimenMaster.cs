@@ -1,9 +1,10 @@
 ﻿using ILab.Extensionss.Data.Models;
+using Laboratory;
 using Newtonsoft.Json;
 
-namespace PathlabApi.Data.Models
+namespace Laboratory.Models
 {
-    public class SpecimenMaster : LabModel
+    public class SpecimenMaster : LaboratoryModel
     {
         [JsonIgnore]
         public virtual ICollection<TestMaster>? TestMasters { get; set; }

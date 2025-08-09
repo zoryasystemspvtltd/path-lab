@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class GRNItem : LabModel
+    public class GRNItem : PathLabModel
     {   
         public DateTime? GRNDate { get; set; }      
        

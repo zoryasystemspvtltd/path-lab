@@ -49,6 +49,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\ilab-authentication\ilab-authentication.csproj" />
 	  <ProjectReference Include="..\Inventory\Inventory.csproj" />
+	  <ProjectReference Include="..\laboratory\laboratory.csproj" />
 	</ItemGroup>
 
 </Project>

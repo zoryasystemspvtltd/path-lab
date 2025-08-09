@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace Inventory.Models
 {
-    public class BusinessUnit : LabModel
+    public class BusinessUnit : PathLabModel
     {
         public string? Type { get; set; }
 
