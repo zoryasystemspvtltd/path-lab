@@ -1,7 +1,7 @@
 ﻿using ILab.Extensionss.Data.Models;
 using Newtonsoft.Json;
 
-namespace PathlabApi.Data.Models
+namespace Laboratory.Data.Models
 {
     public class SpecimenMaster : LabModel
     {

@@ -1,4 +1,5 @@
 ﻿using Inventory.Models;
+using Laboratory.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using PathlabApi.Data.Models;
 namespace PathlabApi.Data;

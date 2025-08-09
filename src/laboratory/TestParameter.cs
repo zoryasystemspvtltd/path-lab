@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PathlabApi.Data.Models
+namespace Laboratory.Data.Models
 {
     public class TestParameter : LabModel
     { 
