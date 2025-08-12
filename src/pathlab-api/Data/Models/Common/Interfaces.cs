@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using Laboratory.Models;
+using System.Numerics;
 
 namespace PathlabApi.Data.Models
 {

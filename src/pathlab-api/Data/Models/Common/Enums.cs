@@ -21,10 +21,18 @@ public class IdNamePair
 
 public enum StateType
 {
-    Initiated = 0,
+    Initiated = 0,  
     InProgress = 1,
     // TODO More
     Completed = 99
+}
+
+public enum ItemType
+{
+    RawMaterials = 0,
+    WorkInProgress = 1,
+    FinishedGoods=2,
+    MROGoods = 3, 
 }
 
 public enum ApprovalStatusType
