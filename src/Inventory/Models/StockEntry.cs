@@ -12,7 +12,7 @@ namespace Inventory.Models
         public virtual Store? Store { get; set; }
 
         [ForeignKey("ItemMaster")]
-        public virtual long? ItemMasterId { get; set; }
+        public virtual long? ItemId { get; set; }
         [JsonIgnore]
         public virtual ItemMaster? ItemMaster { get; set; }
         public string? BatchNo { get; set; }

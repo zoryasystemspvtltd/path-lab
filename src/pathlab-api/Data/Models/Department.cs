@@ -5,7 +5,7 @@ namespace PathlabApi.Data.Models
 {
     public class Department : LabModel, IGlobal
     {
-        [StringLength(10)]
+        [MaxLength(20)]
         public string? Code { get; set; }
     }
 }

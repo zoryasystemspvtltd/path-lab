@@ -12,12 +12,12 @@ namespace Inventory.Models
         public virtual PurchaseOrder? PurchaseOrder { get; set; }
 
         [ForeignKey("ItemMaster")]
-        public virtual long? ItemMasterId { get; set; }
+        public virtual long? ItemId { get; set; }
         [JsonIgnore]
         public virtual ItemMaster? ItemMaster { get; set; }
         public int? Quantity { get; set; }
-        public decimal? Price { get; set; }
-
+        public decimal? Rate { get; set; }
+        public virtual long? IndentId { get; set; }
         [JsonIgnore]
         public virtual ICollection<GRN>? GRNs { get; set; }
     }

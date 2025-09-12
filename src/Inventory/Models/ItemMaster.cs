@@ -6,18 +6,22 @@ namespace Inventory.Models
 {
     public class ItemMaster : LabModel
     {
-        public string? Type { get; set; }
-
-        [ForeignKey("Category")]
-        public virtual long? CategoryId { get; set; }
+        [ForeignKey("ItemType")]
+        public virtual long? ItemTypeId { get; set; }
         [JsonIgnore]
-        public virtual Category? Category { get; set; }
+        public virtual ItemType? ItemType { get; set; }
 
+        [ForeignKey("ItemGroup")]
+        public virtual long? ItemGroupId { get; set; }
+        [JsonIgnore]
+        public virtual ItemGroup? ItemGroup { get; set; }
         [ForeignKey("UnitOfMeasure")]
         public virtual long? UnitOfMeasureId { get; set; }
         [JsonIgnore]
         public virtual UnitOfMeasure? UnitOfMeasure { get; set; }
 
+        public virtual decimal? Rate { get; set; }
+        public virtual bool? Centralized { get; set; }
         [JsonIgnore]
         public virtual ICollection<StockConsumption>? StockConsumptions { get; set; }
 

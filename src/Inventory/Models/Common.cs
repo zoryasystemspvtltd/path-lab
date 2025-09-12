@@ -1,10 +1,15 @@
 ﻿using ILab.Extensionss.Data.Models;
 using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 
 namespace Inventory.Models
 {
     public class Enterprise : LabModel
     {
+        public string? Description { get; set; }
+        [MaxLength(50)]
+        public virtual string? ModifiedBy { get; set; }
+        public virtual DateTime? ModifiedDate { get; set; }
         [JsonIgnore]
         public virtual ICollection<BusinessUnit>? BusinessUnits { get; set; }
     }
@@ -13,16 +18,14 @@ namespace Inventory.Models
         [JsonIgnore]
         public virtual ICollection<ItemMaster>? ItemMasters { get; set; }
     }
-    public class UnitOfMeasure : LabModel
+    public class ItemType : LabModel
     {
         [JsonIgnore]
         public virtual ICollection<ItemMaster>? ItemMasters { get; set; }
     }
-    public class Vendor : LabModel
+    public class UnitOfMeasure : LabModel
     {
-        public string? Contact { get; set; }
-
         [JsonIgnore]
-        public virtual ICollection<PurchaseOrder>? PurchaseOrders { get; set; }
-    }
+        public virtual ICollection<ItemMaster>? ItemMasters { get; set; }
+    }    
 }
