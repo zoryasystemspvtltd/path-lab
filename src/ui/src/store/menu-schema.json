@@ -37,6 +37,34 @@
                 "icon": "sitemap",
                 "path": "/businessunits",
                 "access": "businessunit"
+            },
+            {
+                "name": "categoryManagement",
+                "text": "Category",
+                "icon": "sitemap",
+                "path": "/categorys",
+                "access": "categorys"
+            },
+            {
+                "name": "itemmasterManagement",
+                "text": "Item Master",
+                "icon": "sitemap",
+                "path": "/itemmasters",
+                "access": "itemmasters"
+            },
+            {
+                "name": "unitOfMeasureManagement",
+                "text": "UOM",
+                "icon": "sitemap",
+                "path": "/unitOfMeasures",
+                "access": "unitOfMeasures"
+            },
+             {
+                "name": "vendorManagement",
+                "text": "Vendor",
+                "icon": "sitemap",
+                "path": "/vendors",
+                "access": "vendors"
             }
         ],
         "transaction": [

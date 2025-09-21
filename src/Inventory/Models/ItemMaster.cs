@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class ItemMaster : LabModel
+    public class ItemMaster : PathLabModel
     {
         public string? Type { get; set; }
 

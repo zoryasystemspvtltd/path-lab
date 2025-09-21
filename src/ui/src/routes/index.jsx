@@ -21,6 +21,10 @@ import { useAuth } from "../provider/authProvider";
 import { ProtectedRoute } from "./ProtectedRoute";
 import { AddEnterprise, EditEnterprise, ListEnterprise, ViewEnterprise } from "../pages/app/schema/Enterprises";
 import { AddBusinessUnit, EditBusinessUnit, ViewBusinessUnit, ListBusinessUnit } from "../pages/app/schema/BusinessUnits";
+import { AddItemMaster, EditItemMaster, ViewItemMaster, ListItemMaster } from "../pages/app/schema/ItemMasters";
+import { AddCategory, EditCategory, ViewCategory, ListCategory } from "../pages/app/schema/Categorys";
+import { AddVendor, EditVendor, ViewVendor, ListVendor } from "../pages/app/schema/Vendors";
+import { AddUnitOfMeasure, EditUnitOfMeasure, ViewUnitOfMeasure, ListUnitOfMeasure } from "../pages/app/schema/UnitOfMeasures";
 
 const Routes = () => {
     const { token } = useAuth();
@@ -140,7 +144,6 @@ const Routes = () => {
                     path: "/enterprises/add",
                     element: <AddEnterprise />
                 },
-
                 {
                     path: "/businessunits",
                     element: <ListBusinessUnit />
@@ -156,6 +159,70 @@ const Routes = () => {
                 {
                     path: "/businessunits/add",
                     element: <AddBusinessUnit />
+                },
+                {
+                    path: "/vendors",
+                    element: <ListVendor />
+                },
+                {
+                    path: "/vendors/:id",
+                    element: <ViewVendor />
+                },
+                {
+                    path: "/vendors/:id/edit",
+                    element: <EditVendor />
+                },
+                {
+                    path: "/vendors/add",
+                    element: <AddVendor />
+                },
+                {
+                    path: "/unitOfMeasures",
+                    element: <ListUnitOfMeasure />
+                },
+                {
+                    path: "/unitOfMeasures/:id",
+                    element: <ViewUnitOfMeasure />
+                },
+                {
+                    path: "/unitOfMeasures/:id/edit",
+                    element: <EditUnitOfMeasure />
+                },
+                {
+                    path: "/unitOfMeasures/add",
+                    element: <AddUnitOfMeasure />
+                },
+                {
+                    path: "/itemmasters",
+                    element: <ListItemMaster />
+                },
+                {
+                    path: "/itemmasters/:id",
+                    element: <ViewItemMaster />
+                },
+                {
+                    path: "/itemmasters/:id/edit",
+                    element: <EditItemMaster />
+                },
+                {
+                    path: "/itemmasters/add",
+                    element: <AddItemMaster />
+                },
+                {
+                    path: "/categorys",
+                    element: <ListCategory />
+                },
+                {
+                    path: "/categorys/:id",
+                    element: <ViewCategory />
+                },
+                {
+                    path: "/categorys/:id/edit",
+                    element: <EditCategory />
+                },
+                {
+                    path: "/categorys/add",
+                    element: <AddCategory />
                 },
             ],
         },
