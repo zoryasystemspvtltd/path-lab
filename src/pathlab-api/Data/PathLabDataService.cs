@@ -36,7 +36,7 @@ namespace ILab.Data
 
             if (type == null)
             {
-                var asm2 = typeof(InventoryDataHandler).Assembly;
+                var asm2 = typeof(PathLabModel).Assembly;
                 type = asm2.GetTypes()
                 .FirstOrDefault(p => p.Name.Equals(model, StringComparison.OrdinalIgnoreCase)
                     && p.IsSubclassOf(typeof(LabModel)));

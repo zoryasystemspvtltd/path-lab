@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class BusinessUnit : LabModel
+    public class BusinessUnit : PathLabModel
     {
         public string?Description { get; set; }
         [MaxLength(50)]

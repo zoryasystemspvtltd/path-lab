@@ -71,9 +71,6 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<long?>("CompanyId")
-                        .HasColumnType("bigint");
-
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
@@ -119,8 +116,14 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Key")
                         .HasMaxLength(255)
@@ -195,6 +198,9 @@ namespace PathlabApi.Migrations
                         .HasColumnType("bigint");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
@@ -281,11 +287,14 @@ namespace PathlabApi.Migrations
                     b.Property<long?>("BusinessUnitId")
                         .HasColumnType("bigint");
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("FinancialYearId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("GRNDate")
                         .HasColumnType("datetime2");
@@ -340,8 +349,14 @@ namespace PathlabApi.Migrations
                     b.Property<string>("BatchNo")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Expiry")
                         .HasColumnType("datetime2");
@@ -393,11 +408,14 @@ namespace PathlabApi.Migrations
                     b.Property<long?>("BusinessUnitId")
                         .HasColumnType("bigint");
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("FinancialYearId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("IndentDate")
                         .HasColumnType("datetime2");
@@ -438,8 +456,14 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("GRNDate")
                         .HasColumnType("datetime2");
@@ -524,17 +548,14 @@ namespace PathlabApi.Migrations
                     b.Property<long?>("CategoryId")
                         .HasColumnType("bigint");
 
-                    b.Property<bool?>("Centralized")
-                        .HasColumnType("bit");
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("ItemGroupId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long?>("ItemTypeId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Key")
                         .HasMaxLength(255)
@@ -691,18 +712,14 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<string>("ApprovalStatus")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<long?>("CompanyId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("FinancialYearId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Key")
                         .HasMaxLength(255)
@@ -742,10 +759,16 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("IndentId")
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("ItemMasterId")
                         .HasColumnType("bigint");
 
                     b.Property<long?>("ItemId")
@@ -792,10 +815,16 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("ItemId")
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("ItemMasterId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("Key")
@@ -834,10 +863,16 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("ItemId")
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("ItemMasterId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("Key")
@@ -881,10 +916,16 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("ItemId")
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("ItemMasterId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("Key")
@@ -929,8 +970,14 @@ namespace PathlabApi.Migrations
                     b.Property<string>("BatchNo")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Expiry")
                         .HasColumnType("datetime2");
@@ -1021,8 +1068,14 @@ namespace PathlabApi.Migrations
                     b.Property<long?>("BusinessUnitId")
                         .HasColumnType("bigint");
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Key")
                         .HasMaxLength(255)
@@ -1054,18 +1107,14 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<long?>("CompanyId")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("ContactInfo")
+                    b.Property<string>("Code")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("GSTIN")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Key")
                         .HasMaxLength(255)
@@ -1101,8 +1150,17 @@ namespace PathlabApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Contact")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Key")
                         .HasMaxLength(255)

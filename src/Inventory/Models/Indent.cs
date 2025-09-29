@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class Indent : LabModel
+    public class Indent : PathLabModel
     {   
         public DateTime? IndentDate { get; set; }       
         [ForeignKey("BusinessUnit")]

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSelector } from 'react-redux';
 import IUIMenuItem from "./shared/IUIMenuItem";
-import softwareLogo from "../../assets/images/plm_logo.png";
+import softwareLogo from "../../assets/images/zorya_logo.png";
 import schema from "../../store/menu-schema.json";
 
 const LeftMenu = (props) => {
@@ -150,11 +150,11 @@ const LeftMenu = (props) => {
                 <div className="app-sidebar__inner">
                     <ul className="vertical-nav-menu">
                         {/* <li className="app-sidebar__heading">Project Management</li> */}
-                        <li>
+                        {/* <li>
                             <div className="app-header-center my-2" style={{ backgroundColor: "white" }}>
-                                <div className="logo-center"><img src={softwareLogo} width="100%" height="10%" alt="plm" /></div>
+                                <div className="logo-center"><img src={softwareLogo} width="100%" height="5%" alt="plm" /></div>
                             </div>
-                        </li>
+                        </li> */}
                         <li className="app-sidebar__heading">{menuRole ? `${menuRole} Transactions` : `Admin Transactions`}</li>
                         {
                             menuRole && (

@@ -4,7 +4,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Inventory.Models
 {
-    public class Enterprise : LabModel
+    
+    public class Enterprise : PathLabModel
     {
         public string? Description { get; set; }
         [MaxLength(50)]
@@ -13,17 +14,17 @@ namespace Inventory.Models
         [JsonIgnore]
         public virtual ICollection<BusinessUnit>? BusinessUnits { get; set; }
     }
-    public class Category : LabModel
+    public class Category : PathLabModel
     {
         [JsonIgnore]
         public virtual ICollection<ItemMaster>? ItemMasters { get; set; }
     }
-    public class ItemType : LabModel
+    public class UnitOfMeasure : PathLabModel
     {
         [JsonIgnore]
         public virtual ICollection<ItemMaster>? ItemMasters { get; set; }
     }
-    public class UnitOfMeasure : LabModel
+    public class Vendor : PathLabModel
     {
         [JsonIgnore]
         public virtual ICollection<ItemMaster>? ItemMasters { get; set; }
