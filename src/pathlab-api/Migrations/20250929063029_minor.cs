@@ -5,212 +5,240 @@
 namespace PathlabApi.Migrations
 {
     /// <inheritdoc />
-    public partial class pathlabmodel : Migration
+    public partial class minor : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "Vendors",
-                type: "nvarchar(max)",
+                table: "TestResults",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "Vendors",
+                table: "TestResults",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "UnitOfMeasures",
+                table: "TestResultDetails",
+                type: "nvarchar(20)",
+                maxLength: 20,
+                nullable: true);
+
+            migrationBuilder.AddColumn<string>(
+                name: "Description",
+                table: "TestResultDetails",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "UnitOfMeasures",
+                table: "TestRequestParameters",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "Stores",
-                type: "nvarchar(max)",
+                table: "TestRequestDetails",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "Stores",
+                table: "TestRequestDetails",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "StockEntries",
-                type: "nvarchar(max)",
+                table: "TestReagentMasters",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "StockEntries",
+                table: "TestReagentMasters",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "StockConsumptions",
-                type: "nvarchar(max)",
+                table: "TestReagentMapping",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "StockConsumptions",
+                table: "TestReagentMapping",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "StockAdjustments",
+                table: "TestMappingMasters",
+                type: "nvarchar(20)",
+                maxLength: 20,
+                nullable: true);
+
+            migrationBuilder.AddColumn<string>(
+                name: "Description",
+                table: "TestMappingMasters",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "StockAdjustments",
+                table: "SpecimenMasters",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "ReagentMappings",
-                type: "nvarchar(max)",
+                table: "SampleCollectorMasters",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "ReagentMappings",
+                table: "SampleCollectorMasters",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "PurchaseOrders",
-                type: "nvarchar(max)",
+                table: "SampleCollectorFeeSetups",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "PurchaseOrders",
+                table: "SampleCollectorFeeSetups",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "PurchaseOrderItems",
-                type: "nvarchar(max)",
+                table: "ReferralDoctorMasters",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "PurchaseOrderItems",
+                table: "ReferralDoctorMasters",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "ItemMasters",
-                type: "nvarchar(max)",
+                table: "ReferralDoctorFeeSetups",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "ItemMasters",
+                table: "ReferralDoctorFeeSetups",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "Indents",
+                table: "PatientDetails",
+                type: "nvarchar(20)",
+                maxLength: 20,
+                nullable: true);
+
+            migrationBuilder.AddColumn<string>(
+                name: "Description",
+                table: "PatientDetails",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "Indents",
+                table: "ParameterRangMasters",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "IndentItems",
-                type: "nvarchar(max)",
+                table: "EquipmentMasters",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "IndentItems",
+                table: "EquipmentMasters",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "GRNs",
+                table: "EquipmentHeartBeats",
+                type: "nvarchar(20)",
+                maxLength: 20,
+                nullable: true);
+
+            migrationBuilder.AddColumn<string>(
+                name: "Description",
+                table: "EquipmentHeartBeats",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "GRNs",
+                table: "Departments",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "GRNItems",
-                type: "nvarchar(max)",
+                table: "ControlResults",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "GRNItems",
+                table: "ControlResults",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "Enterprises",
-                type: "nvarchar(max)",
+                table: "ControlResultDetails",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "Enterprises",
+                table: "ControlResultDetails",
                 type: "nvarchar(max)",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Code",
-                table: "Categories",
-                type: "nvarchar(max)",
+                table: "AccountGroups",
+                type: "nvarchar(20)",
+                maxLength: 20,
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Description",
-                table: "Categories",
-                type: "nvarchar(max)",
-                nullable: true);
-
-            migrationBuilder.AddColumn<string>(
-                name: "Code",
-                table: "BusinessUnits",
-                type: "nvarchar(max)",
-                nullable: true);
-
-            migrationBuilder.AddColumn<string>(
-                name: "Description",
-                table: "BusinessUnits",
+                table: "AccountGroups",
                 type: "nvarchar(max)",
                 nullable: true);
         }
@@ -220,139 +248,147 @@ namespace PathlabApi.Migrations
         {
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "Vendors");
+                table: "TestResults");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "Vendors");
+                table: "TestResults");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "UnitOfMeasures");
+                table: "TestResultDetails");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "UnitOfMeasures");
+                table: "TestResultDetails");
+
+            migrationBuilder.DropColumn(
+                name: "Description",
+                table: "TestRequestParameters");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "Stores");
+                table: "TestRequestDetails");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "Stores");
+                table: "TestRequestDetails");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "StockEntries");
+                table: "TestReagentMasters");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "StockEntries");
+                table: "TestReagentMasters");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "StockConsumptions");
+                table: "TestReagentMapping");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "StockConsumptions");
+                table: "TestReagentMapping");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "StockAdjustments");
+                table: "TestMappingMasters");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "StockAdjustments");
+                table: "TestMappingMasters");
+
+            migrationBuilder.DropColumn(
+                name: "Description",
+                table: "SpecimenMasters");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "ReagentMappings");
+                table: "SampleCollectorMasters");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "ReagentMappings");
+                table: "SampleCollectorMasters");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "PurchaseOrders");
+                table: "SampleCollectorFeeSetups");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "PurchaseOrders");
+                table: "SampleCollectorFeeSetups");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "PurchaseOrderItems");
+                table: "ReferralDoctorMasters");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "PurchaseOrderItems");
+                table: "ReferralDoctorMasters");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "ItemMasters");
+                table: "ReferralDoctorFeeSetups");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "ItemMasters");
+                table: "ReferralDoctorFeeSetups");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "Indents");
+                table: "PatientDetails");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "Indents");
+                table: "PatientDetails");
+
+            migrationBuilder.DropColumn(
+                name: "Description",
+                table: "ParameterRangMasters");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "IndentItems");
+                table: "EquipmentMasters");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "IndentItems");
+                table: "EquipmentMasters");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "GRNs");
+                table: "EquipmentHeartBeats");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "GRNs");
+                table: "EquipmentHeartBeats");
+
+            migrationBuilder.DropColumn(
+                name: "Description",
+                table: "Departments");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "GRNItems");
+                table: "ControlResults");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "GRNItems");
+                table: "ControlResults");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "Enterprises");
+                table: "ControlResultDetails");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "Enterprises");
+                table: "ControlResultDetails");
 
             migrationBuilder.DropColumn(
                 name: "Code",
-                table: "Categories");
+                table: "AccountGroups");
 
             migrationBuilder.DropColumn(
                 name: "Description",
-                table: "Categories");
-
-            migrationBuilder.DropColumn(
-                name: "Code",
-                table: "BusinessUnits");
-
-            migrationBuilder.DropColumn(
-                name: "Description",
-                table: "BusinessUnits");
+                table: "AccountGroups");
         }
     }
 }

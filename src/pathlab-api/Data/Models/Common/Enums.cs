@@ -27,14 +27,6 @@ public enum StateType
     Completed = 99
 }
 
-public enum ItemType
-{
-    RawMaterials = 0,
-    WorkInProgress = 1,
-    FinishedGoods=2,
-    MROGoods = 3, 
-}
-
 public enum ApprovalStatusType
 {
     Pending = 0,

@@ -1,21 +1,29 @@
-﻿using ILab.Extensionss.Data.Models;
-using Laboratory;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Laboratory.Models
 {
     public class TestMaster : LaboratoryModel
     {
+        [MaxLength(20)]
+        public virtual string? Code { get; set; }
+        public virtual string? Description { get; set; }
+        public virtual long? CompanyId { get; set; }
         [ForeignKey("SpecimenMaster")]
-        public virtual long? SpecimenMasterId { get; set; }
+        public virtual long? SpecimenId { get; set; }
         [JsonIgnore]
         public virtual SpecimenMaster? SpecimenMaster { get; set; }
+        public virtual long? DepartmentId { get; set; }
 
         [JsonIgnore]
-        public virtual ICollection<TestParameter>? TestParameters { get; set; }
+        public virtual ICollection<ParameterMaster>? ParameterMasters { get; set; }
 
         [JsonIgnore]
-        public virtual ICollection<TestMaster>? TestMasters { get; set; }
+        public virtual ICollection<ReferralDoctorFeeSetup>? ReferralDoctorFeeSetups { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<SampleCollectorFeeSetup>? SampleCollectorFeeSetups { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<TestReagentMapping>? TestReagentMappings { get; set; }
     }
 }

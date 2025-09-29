@@ -1,4 +1,5 @@
 ﻿using ILab.Extensionss.Data.Models;
+using Inventory.Models.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PathlabApi.Data.Models;
@@ -24,7 +25,7 @@ public class EnumController : ControllerBase
     private List<EnumData> GetEnum(string module)
     {
         List<EnumData> enumValues = [];
-        Type type = null;
+        Type? type = null;
         switch (module)
         {
             case "statusType":

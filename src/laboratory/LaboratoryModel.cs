@@ -1,13 +1,12 @@
 ﻿using ILab.Extensionss.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Laboratory.Models
 {
     public abstract class LaboratoryModel : LabModel
     {
+        [MaxLength(20)]
+        public virtual string? Code { get; set; }
+        public virtual string? Description { get; set; }
     }
 }

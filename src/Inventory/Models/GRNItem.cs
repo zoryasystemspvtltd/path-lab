@@ -1,5 +1,4 @@
-﻿using ILab.Extensionss.Data.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
@@ -14,7 +13,7 @@ namespace Inventory.Models
         public virtual GRN? GRN { get; set; }
 
         [ForeignKey("ItemMaster")]
-        public virtual long? ItemMasterId { get; set; }
+        public virtual long? ItemId { get; set; }
         [JsonIgnore]
         public virtual ItemMaster? ItemMaster { get; set; }
         public string? BatchNo { get; set; }

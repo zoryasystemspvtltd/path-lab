@@ -1,5 +1,5 @@
-﻿using ILab.Extensionss.Data.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
@@ -8,11 +8,18 @@ namespace Inventory.Models
     {   
         public DateTime? PurchaseOrderDate { get; set; }      
        
-        [ForeignKey("Vendor")]
-        public virtual long? VendorId { get; set; }
+        [ForeignKey("Supplier")]
+        public virtual long? SupplierId { get; set; }
         [JsonIgnore]
-        public virtual Vendor? Vendor { get; set; }
+        public virtual Supplier? Supplier { get; set; }
+        [ForeignKey("Company")]
+        public virtual long? CompanyId { get; set; }
+        [JsonIgnore]
+        public virtual Company? Company { get; set; }
+        [MaxLength(20)]
+        public string? ApprovalStatus { get; set; }
 
+        public virtual long? FinancialYearId { get; set; }
         [JsonIgnore]
         public virtual ICollection<GRN>? GRNs { get; set; }
         [JsonIgnore]
