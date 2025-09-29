@@ -1,9 +1,8 @@
-﻿using ILab.Extensionss.Data.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace PathlabApi.Data.Models
+namespace Laboratory.Models
 {  
-    public class EquipmentHeartBeat : LabModel
+    public class EquipmentHeartBeat : LaboratoryModel
     {
         [MaxLength(50)]
         public virtual string? AccessKey { get; set; }

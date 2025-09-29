@@ -1,10 +1,9 @@
-﻿using ILab.Extensionss.Data.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
-namespace PathlabApi.Data.Models
+namespace Laboratory.Models
 {
-    public class PatientDetails : LabModel
+    public class PatientDetails : LaboratoryModel
     {      
         public virtual decimal Age { get; set; }
         [MaxLength(10)]

@@ -1,10 +1,9 @@
-﻿using ILab.Extensionss.Data.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
-namespace PathlabApi.Data.Models
+namespace Laboratory.Models
 {
-    public class ControlResults : LabModel
+    public class ControlResults : LaboratoryModel
     {
         [MaxLength(50)]
         public virtual string? SampleNo { get; set; }

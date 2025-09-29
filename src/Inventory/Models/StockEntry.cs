@@ -1,5 +1,4 @@
-﻿using ILab.Extensionss.Data.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models

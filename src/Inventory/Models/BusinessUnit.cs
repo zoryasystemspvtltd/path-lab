@@ -1,4 +1,4 @@
-﻿using ILab.Extensionss.Data.Models;
+﻿using Inventory.Models.Common;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +7,6 @@ namespace Inventory.Models
 {
     public class BusinessUnit : PathLabModel
     {
-        public string?Description { get; set; }
         [MaxLength(50)]
         public string? Type { get; set; }
 

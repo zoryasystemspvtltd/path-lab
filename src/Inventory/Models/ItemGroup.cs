@@ -1,10 +1,10 @@
-﻿using ILab.Extensionss.Data.Models;
+﻿using Inventory.Models.Common;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class ItemGroup : LabModel
+    public class ItemGroup : PathLabModel
     {
         [ForeignKey("ItemType")]
         public virtual long? ItemTypeId { get; set; }

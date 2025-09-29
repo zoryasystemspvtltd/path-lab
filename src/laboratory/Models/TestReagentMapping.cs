@@ -1,12 +1,10 @@
-﻿using ILab.Extensionss.Data.Models;
-using Inventory.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PathlabApi.Data.Models
+namespace Laboratory.Models
 {
-    public class TestReagentMapping : LabModel
+    public class TestReagentMapping : LaboratoryModel
     {
         public virtual long? CompanyId { get; set; }
 

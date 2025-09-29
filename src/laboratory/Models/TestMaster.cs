@@ -1,6 +1,4 @@
-﻿using ILab.Extensionss.Data.Models;
-using Laboratory;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 

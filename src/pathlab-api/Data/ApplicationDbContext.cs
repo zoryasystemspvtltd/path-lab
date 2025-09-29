@@ -1,4 +1,5 @@
 ﻿using Inventory.Models;
+using Inventory.Models.Common;
 using Laboratory.Models;
 using Microsoft.EntityFrameworkCore;
 using PathlabApi.Data.Models;
@@ -31,9 +32,9 @@ public class ApplicationDbContext : DbContext
     public virtual DbSet<SpecimenMaster> SpecimenMasters { get; set; }
     public virtual DbSet<Department> Departments { get; set; }
 
-    public virtual DbSet<Enterprise> Enterprises { get; set; }
-    public virtual DbSet<BusinessUnit> BusinessUnits { get; set; }
+    public virtual DbSet<Enterprise> Enterprises { get; set; }    
     public virtual DbSet<Company> Companies { get; set; }
+    public virtual DbSet<BusinessUnit> BusinessUnits { get; set; }
     public virtual DbSet<AccountGroup> AccountGroups { get; set; }
     public virtual DbSet<FinancialYear> FinancialYears { get; set; }
     public virtual DbSet<Supplier> Supplier { get; set; }

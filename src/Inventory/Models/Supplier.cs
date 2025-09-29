@@ -1,11 +1,10 @@
-﻿using ILab.Extensionss.Data.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory.Models
 {
-    public class Supplier : LabModel
+    public class Supplier : PathLabModel
     {
         [MaxLength(20)]
         public virtual string? GSTIN { get; set; }

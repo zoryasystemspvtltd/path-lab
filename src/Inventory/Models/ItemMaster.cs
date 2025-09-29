@@ -1,4 +1,4 @@
-﻿using ILab.Extensionss.Data.Models;
+﻿using Inventory.Models.Common;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 

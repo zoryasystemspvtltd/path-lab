@@ -1,18 +1,18 @@
-﻿using ILab.Extensionss.Data.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
-namespace Inventory.Models
+namespace Inventory.Models.Common
 {
     
     public class Enterprise : PathLabModel
-    {
-        public string? Description { get; set; }
+    {       
         [MaxLength(50)]
         public virtual string? ModifiedBy { get; set; }
         public virtual DateTime? ModifiedDate { get; set; }
         [JsonIgnore]
         public virtual ICollection<BusinessUnit>? BusinessUnits { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<Company>? Companies { get; set; }
     }
     public class Category : PathLabModel
     {

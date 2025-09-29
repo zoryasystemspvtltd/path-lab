@@ -1,12 +1,7 @@
-﻿using ILab.Extensionss.Data.Models;
-using System.ComponentModel.DataAnnotations;
-
-namespace Inventory.Models
+﻿namespace Inventory.Models
 {
-    public class FinancialYear : LabModel
+    public class FinancialYear : PathLabModel
     {
-        [MaxLength(20)]
-        public virtual string? Code { get; set; }
         public virtual DateTime StartDate { get; set; }
         public virtual DateTime EndDate { get; set; }        
     }

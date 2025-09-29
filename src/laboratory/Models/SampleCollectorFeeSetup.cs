@@ -1,19 +1,17 @@
-﻿using ILab.Extensionss.Data.Models;
-using Inventory.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PathlabApi.Data.Models
+namespace Laboratory.Models
 {
-    public class ReferralDoctorFeeSetup : LabModel
+    public class SampleCollectorFeeSetup : LaboratoryModel
     {
-        public virtual long? BusinessUnitId { get; set; }        
-
-        [ForeignKey("ReferralDoctorMaster")]
-        public virtual long? ReferralDoctorId { get; set; }
+        public virtual long? BusinessUnitId { get; set; }
+        
+        [ForeignKey("SampleCollectorMaster")]
+        public virtual long? CollectorId { get; set; }
         [JsonIgnore]
-        public virtual ReferralDoctorMaster? ReferralDoctorMaster { get; set; }
+        public virtual SampleCollectorMaster? SampleCollectorMaster { get; set; }
 
         [ForeignKey("TestMaster")]
         public virtual long? TestId { get; set; }
@@ -25,7 +23,7 @@ namespace PathlabApi.Data.Models
         public virtual decimal FeeValue { get; set; }       
         public virtual DateOnly EffectiveFrom { get; set; }        
         public virtual DateOnly? EffectiveTo { get; set; }
-        [MaxLength(50)]
+        [MaxLength(100)]
         public virtual string? ModifiedBy { get; set; }       
         public virtual DateTime? ModifiedDate { get; set; }
     }
