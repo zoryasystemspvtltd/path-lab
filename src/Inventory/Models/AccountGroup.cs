@@ -1,9 +1,8 @@
-﻿using ILab.Extensionss.Data.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Inventory.Models
 {
-    public class AccountGroup : LabModel
+    public class AccountGroup : PathLabModel
     {
         [MaxLength(50)]
         public string? Type { get; set; }

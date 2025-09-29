@@ -646,26 +646,34 @@
         }
       }
     },
-    "/api/Attachment":{"get":{"tags":["Attachment"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/AttachmentItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/AttachmentItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/AttachmentItemList"}}}}}},"post":{"tags":["Attachment"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"text/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Attachment"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Attachment/{id}":{"get":{"tags":["Attachment"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Attachment"}},"application/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"text/json":{"schema":{"$ref":"#/components/schemas/Attachment"}}}}}},"put":{"tags":["Attachment"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"text/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Attachment"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Attachment"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+    "/api/ApplicationLog":{"get":{"tags":["ApplicationLog"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ApplicationLogItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLogItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLogItemList"}}}}}},"post":{"tags":["ApplicationLog"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/ApplicationLog/{id}":{"get":{"tags":["ApplicationLog"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}}}}}},"put":{"tags":["ApplicationLog"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["ApplicationLog"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/Attachment":{"get":{"tags":["Attachment"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/AttachmentItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/AttachmentItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/AttachmentItemList"}}}}}},"post":{"tags":["Attachment"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"text/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Attachment"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Attachment/{id}":{"get":{"tags":["Attachment"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Attachment"}},"application/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"text/json":{"schema":{"$ref":"#/components/schemas/Attachment"}}}}}},"put":{"tags":["Attachment"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"text/json":{"schema":{"$ref":"#/components/schemas/Attachment"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Attachment"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Attachment"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/BulkDataUpload":{"get":{"tags":["BulkDataUpload"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/BulkDataUploadItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/BulkDataUploadItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/BulkDataUploadItemList"}}}}}},"post":{"tags":["BulkDataUpload"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"text/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/BulkDataUpload/{id}":{"get":{"tags":["BulkDataUpload"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"application/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"text/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}}}}}},"put":{"tags":["BulkDataUpload"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"text/json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/BulkDataUpload"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["BulkDataUpload"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
-"/api/ApplicationLog":{"get":{"tags":["ApplicationLog"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ApplicationLogItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLogItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLogItemList"}}}}}},"post":{"tags":["ApplicationLog"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/ApplicationLog/{id}":{"get":{"tags":["ApplicationLog"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}}}}}},"put":{"tags":["ApplicationLog"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"text/json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ApplicationLog"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["ApplicationLog"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/AccountGroup":{"get":{"tags":["AccountGroup"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/AccountGroupItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/AccountGroupItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/AccountGroupItemList"}}}}}},"post":{"tags":["AccountGroup"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/AccountGroup"}},"text/json":{"schema":{"$ref":"#/components/schemas/AccountGroup"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/AccountGroup"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/AccountGroup/{id}":{"get":{"tags":["AccountGroup"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/AccountGroup"}},"application/json":{"schema":{"$ref":"#/components/schemas/AccountGroup"}},"text/json":{"schema":{"$ref":"#/components/schemas/AccountGroup"}}}}}},"put":{"tags":["AccountGroup"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/AccountGroup"}},"text/json":{"schema":{"$ref":"#/components/schemas/AccountGroup"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/AccountGroup"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["AccountGroup"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/BusinessUnit":{"get":{"tags":["BusinessUnit"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/BusinessUnitItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/BusinessUnitItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/BusinessUnitItemList"}}}}}},"post":{"tags":["BusinessUnit"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/BusinessUnit"}},"text/json":{"schema":{"$ref":"#/components/schemas/BusinessUnit"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/BusinessUnit"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/BusinessUnit/{id}":{"get":{"tags":["BusinessUnit"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/BusinessUnit"}},"application/json":{"schema":{"$ref":"#/components/schemas/BusinessUnit"}},"text/json":{"schema":{"$ref":"#/components/schemas/BusinessUnit"}}}}}},"put":{"tags":["BusinessUnit"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/BusinessUnit"}},"text/json":{"schema":{"$ref":"#/components/schemas/BusinessUnit"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/BusinessUnit"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["BusinessUnit"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
-"/api/Enterprise":{"get":{"tags":["Enterprise"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/EnterpriseItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/EnterpriseItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/EnterpriseItemList"}}}}}},"post":{"tags":["Enterprise"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"text/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Enterprise"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Enterprise/{id}":{"get":{"tags":["Enterprise"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"application/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"text/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}}}}}},"put":{"tags":["Enterprise"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"text/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Enterprise"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Enterprise"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
-"/api/Category":{"get":{"tags":["Category"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/CategoryItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/CategoryItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/CategoryItemList"}}}}}},"post":{"tags":["Category"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Category"}},"text/json":{"schema":{"$ref":"#/components/schemas/Category"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Category"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Category/{id}":{"get":{"tags":["Category"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Category"}},"application/json":{"schema":{"$ref":"#/components/schemas/Category"}},"text/json":{"schema":{"$ref":"#/components/schemas/Category"}}}}}},"put":{"tags":["Category"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Category"}},"text/json":{"schema":{"$ref":"#/components/schemas/Category"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Category"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Category"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
-"/api/UnitOfMeasure":{"get":{"tags":["UnitOfMeasure"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/UnitOfMeasureItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasureItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasureItemList"}}}}}},"post":{"tags":["UnitOfMeasure"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"text/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/UnitOfMeasure/{id}":{"get":{"tags":["UnitOfMeasure"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"application/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"text/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}}}}}},"put":{"tags":["UnitOfMeasure"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"text/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["UnitOfMeasure"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
-"/api/Vendor":{"get":{"tags":["Vendor"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/VendorItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/VendorItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/VendorItemList"}}}}}},"post":{"tags":["Vendor"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"text/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Vendor"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Vendor/{id}":{"get":{"tags":["Vendor"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Vendor"}},"application/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"text/json":{"schema":{"$ref":"#/components/schemas/Vendor"}}}}}},"put":{"tags":["Vendor"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"text/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Vendor"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Vendor"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/Company":{"get":{"tags":["Company"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/CompanyItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/CompanyItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/CompanyItemList"}}}}}},"post":{"tags":["Company"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Company"}},"text/json":{"schema":{"$ref":"#/components/schemas/Company"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Company"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Company/{id}":{"get":{"tags":["Company"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Company"}},"application/json":{"schema":{"$ref":"#/components/schemas/Company"}},"text/json":{"schema":{"$ref":"#/components/schemas/Company"}}}}}},"put":{"tags":["Company"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Company"}},"text/json":{"schema":{"$ref":"#/components/schemas/Company"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Company"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Company"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/FinancialYear":{"get":{"tags":["FinancialYear"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/FinancialYearItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/FinancialYearItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/FinancialYearItemList"}}}}}},"post":{"tags":["FinancialYear"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/FinancialYear"}},"text/json":{"schema":{"$ref":"#/components/schemas/FinancialYear"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/FinancialYear"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/FinancialYear/{id}":{"get":{"tags":["FinancialYear"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/FinancialYear"}},"application/json":{"schema":{"$ref":"#/components/schemas/FinancialYear"}},"text/json":{"schema":{"$ref":"#/components/schemas/FinancialYear"}}}}}},"put":{"tags":["FinancialYear"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/FinancialYear"}},"text/json":{"schema":{"$ref":"#/components/schemas/FinancialYear"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/FinancialYear"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["FinancialYear"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/GRN":{"get":{"tags":["GRN"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/GRNItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/GRNItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/GRNItemList"}}}}}},"post":{"tags":["GRN"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/GRN"}},"text/json":{"schema":{"$ref":"#/components/schemas/GRN"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/GRN"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/GRN/{id}":{"get":{"tags":["GRN"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/GRN"}},"application/json":{"schema":{"$ref":"#/components/schemas/GRN"}},"text/json":{"schema":{"$ref":"#/components/schemas/GRN"}}}}}},"put":{"tags":["GRN"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/GRN"}},"text/json":{"schema":{"$ref":"#/components/schemas/GRN"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/GRN"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["GRN"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/GRNItem":{"get":{"tags":["GRNItem"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/GRNItemItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/GRNItemItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/GRNItemItemList"}}}}}},"post":{"tags":["GRNItem"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/GRNItem"}},"text/json":{"schema":{"$ref":"#/components/schemas/GRNItem"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/GRNItem"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/GRNItem/{id}":{"get":{"tags":["GRNItem"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/GRNItem"}},"application/json":{"schema":{"$ref":"#/components/schemas/GRNItem"}},"text/json":{"schema":{"$ref":"#/components/schemas/GRNItem"}}}}}},"put":{"tags":["GRNItem"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/GRNItem"}},"text/json":{"schema":{"$ref":"#/components/schemas/GRNItem"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/GRNItem"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["GRNItem"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/Indent":{"get":{"tags":["Indent"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/IndentItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/IndentItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/IndentItemList"}}}}}},"post":{"tags":["Indent"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Indent"}},"text/json":{"schema":{"$ref":"#/components/schemas/Indent"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Indent"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Indent/{id}":{"get":{"tags":["Indent"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Indent"}},"application/json":{"schema":{"$ref":"#/components/schemas/Indent"}},"text/json":{"schema":{"$ref":"#/components/schemas/Indent"}}}}}},"put":{"tags":["Indent"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Indent"}},"text/json":{"schema":{"$ref":"#/components/schemas/Indent"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Indent"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Indent"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/IndentItem":{"get":{"tags":["IndentItem"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/IndentItemItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/IndentItemItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/IndentItemItemList"}}}}}},"post":{"tags":["IndentItem"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/IndentItem"}},"text/json":{"schema":{"$ref":"#/components/schemas/IndentItem"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/IndentItem"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/IndentItem/{id}":{"get":{"tags":["IndentItem"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/IndentItem"}},"application/json":{"schema":{"$ref":"#/components/schemas/IndentItem"}},"text/json":{"schema":{"$ref":"#/components/schemas/IndentItem"}}}}}},"put":{"tags":["IndentItem"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/IndentItem"}},"text/json":{"schema":{"$ref":"#/components/schemas/IndentItem"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/IndentItem"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["IndentItem"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/ItemGroup":{"get":{"tags":["ItemGroup"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ItemGroupItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/ItemGroupItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/ItemGroupItemList"}}}}}},"post":{"tags":["ItemGroup"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ItemGroup"}},"text/json":{"schema":{"$ref":"#/components/schemas/ItemGroup"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ItemGroup"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/ItemGroup/{id}":{"get":{"tags":["ItemGroup"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ItemGroup"}},"application/json":{"schema":{"$ref":"#/components/schemas/ItemGroup"}},"text/json":{"schema":{"$ref":"#/components/schemas/ItemGroup"}}}}}},"put":{"tags":["ItemGroup"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ItemGroup"}},"text/json":{"schema":{"$ref":"#/components/schemas/ItemGroup"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ItemGroup"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["ItemGroup"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/ItemMaster":{"get":{"tags":["ItemMaster"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ItemMasterItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/ItemMasterItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/ItemMasterItemList"}}}}}},"post":{"tags":["ItemMaster"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ItemMaster"}},"text/json":{"schema":{"$ref":"#/components/schemas/ItemMaster"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ItemMaster"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/ItemMaster/{id}":{"get":{"tags":["ItemMaster"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ItemMaster"}},"application/json":{"schema":{"$ref":"#/components/schemas/ItemMaster"}},"text/json":{"schema":{"$ref":"#/components/schemas/ItemMaster"}}}}}},"put":{"tags":["ItemMaster"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ItemMaster"}},"text/json":{"schema":{"$ref":"#/components/schemas/ItemMaster"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ItemMaster"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["ItemMaster"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/Ledger":{"get":{"tags":["Ledger"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/LedgerItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/LedgerItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/LedgerItemList"}}}}}},"post":{"tags":["Ledger"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Ledger"}},"text/json":{"schema":{"$ref":"#/components/schemas/Ledger"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Ledger"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Ledger/{id}":{"get":{"tags":["Ledger"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Ledger"}},"application/json":{"schema":{"$ref":"#/components/schemas/Ledger"}},"text/json":{"schema":{"$ref":"#/components/schemas/Ledger"}}}}}},"put":{"tags":["Ledger"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Ledger"}},"text/json":{"schema":{"$ref":"#/components/schemas/Ledger"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Ledger"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Ledger"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/PurchaseBill":{"get":{"tags":["PurchaseBill"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/PurchaseBillItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseBillItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseBillItemList"}}}}}},"post":{"tags":["PurchaseBill"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseBill"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseBill"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/PurchaseBill"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/PurchaseBill/{id}":{"get":{"tags":["PurchaseBill"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/PurchaseBill"}},"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseBill"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseBill"}}}}}},"put":{"tags":["PurchaseBill"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseBill"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseBill"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/PurchaseBill"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["PurchaseBill"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/PurchaseOrder":{"get":{"tags":["PurchaseOrder"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItemList"}}}}}},"post":{"tags":["PurchaseOrder"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrder"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrder"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/PurchaseOrder"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/PurchaseOrder/{id}":{"get":{"tags":["PurchaseOrder"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/PurchaseOrder"}},"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrder"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrder"}}}}}},"put":{"tags":["PurchaseOrder"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrder"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrder"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/PurchaseOrder"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["PurchaseOrder"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/PurchaseOrderItem":{"get":{"tags":["PurchaseOrderItem"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItemItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItemItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItemItemList"}}}}}},"post":{"tags":["PurchaseOrderItem"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItem"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItem"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItem"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/PurchaseOrderItem/{id}":{"get":{"tags":["PurchaseOrderItem"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItem"}},"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItem"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItem"}}}}}},"put":{"tags":["PurchaseOrderItem"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItem"}},"text/json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItem"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/PurchaseOrderItem"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["PurchaseOrderItem"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/ReagentMapping":{"get":{"tags":["ReagentMapping"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ReagentMappingItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/ReagentMappingItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/ReagentMappingItemList"}}}}}},"post":{"tags":["ReagentMapping"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ReagentMapping"}},"text/json":{"schema":{"$ref":"#/components/schemas/ReagentMapping"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ReagentMapping"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/ReagentMapping/{id}":{"get":{"tags":["ReagentMapping"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/ReagentMapping"}},"application/json":{"schema":{"$ref":"#/components/schemas/ReagentMapping"}},"text/json":{"schema":{"$ref":"#/components/schemas/ReagentMapping"}}}}}},"put":{"tags":["ReagentMapping"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ReagentMapping"}},"text/json":{"schema":{"$ref":"#/components/schemas/ReagentMapping"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/ReagentMapping"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["ReagentMapping"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/StockAdjustment":{"get":{"tags":["StockAdjustment"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/StockAdjustmentItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/StockAdjustmentItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockAdjustmentItemList"}}}}}},"post":{"tags":["StockAdjustment"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/StockAdjustment"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockAdjustment"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/StockAdjustment"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/StockAdjustment/{id}":{"get":{"tags":["StockAdjustment"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/StockAdjustment"}},"application/json":{"schema":{"$ref":"#/components/schemas/StockAdjustment"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockAdjustment"}}}}}},"put":{"tags":["StockAdjustment"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/StockAdjustment"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockAdjustment"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/StockAdjustment"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["StockAdjustment"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/StockConsumption":{"get":{"tags":["StockConsumption"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/StockConsumptionItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/StockConsumptionItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockConsumptionItemList"}}}}}},"post":{"tags":["StockConsumption"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/StockConsumption"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockConsumption"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/StockConsumption"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/StockConsumption/{id}":{"get":{"tags":["StockConsumption"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/StockConsumption"}},"application/json":{"schema":{"$ref":"#/components/schemas/StockConsumption"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockConsumption"}}}}}},"put":{"tags":["StockConsumption"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/StockConsumption"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockConsumption"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/StockConsumption"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["StockConsumption"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/StockEntry":{"get":{"tags":["StockEntry"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/StockEntryItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/StockEntryItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockEntryItemList"}}}}}},"post":{"tags":["StockEntry"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/StockEntry"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockEntry"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/StockEntry"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/StockEntry/{id}":{"get":{"tags":["StockEntry"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/StockEntry"}},"application/json":{"schema":{"$ref":"#/components/schemas/StockEntry"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockEntry"}}}}}},"put":{"tags":["StockEntry"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/StockEntry"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockEntry"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/StockEntry"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["StockEntry"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/StockStatus":{"get":{"tags":["StockStatus"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/StockStatusItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/StockStatusItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockStatusItemList"}}}}}},"post":{"tags":["StockStatus"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/StockStatus"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockStatus"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/StockStatus"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/StockStatus/{id}":{"get":{"tags":["StockStatus"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/StockStatus"}},"application/json":{"schema":{"$ref":"#/components/schemas/StockStatus"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockStatus"}}}}}},"put":{"tags":["StockStatus"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/StockStatus"}},"text/json":{"schema":{"$ref":"#/components/schemas/StockStatus"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/StockStatus"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["StockStatus"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 "/api/Store":{"get":{"tags":["Store"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/StoreItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/StoreItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/StoreItemList"}}}}}},"post":{"tags":["Store"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Store"}},"text/json":{"schema":{"$ref":"#/components/schemas/Store"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Store"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Store/{id}":{"get":{"tags":["Store"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Store"}},"application/json":{"schema":{"$ref":"#/components/schemas/Store"}},"text/json":{"schema":{"$ref":"#/components/schemas/Store"}}}}}},"put":{"tags":["Store"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Store"}},"text/json":{"schema":{"$ref":"#/components/schemas/Store"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Store"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Store"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/Supplier":{"get":{"tags":["Supplier"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/SupplierItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/SupplierItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/SupplierItemList"}}}}}},"post":{"tags":["Supplier"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Supplier"}},"text/json":{"schema":{"$ref":"#/components/schemas/Supplier"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Supplier"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Supplier/{id}":{"get":{"tags":["Supplier"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Supplier"}},"application/json":{"schema":{"$ref":"#/components/schemas/Supplier"}},"text/json":{"schema":{"$ref":"#/components/schemas/Supplier"}}}}}},"put":{"tags":["Supplier"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Supplier"}},"text/json":{"schema":{"$ref":"#/components/schemas/Supplier"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Supplier"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Supplier"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/Enterprise":{"get":{"tags":["Enterprise"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/EnterpriseItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/EnterpriseItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/EnterpriseItemList"}}}}}},"post":{"tags":["Enterprise"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"text/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Enterprise"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Enterprise/{id}":{"get":{"tags":["Enterprise"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"application/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"text/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}}}}}},"put":{"tags":["Enterprise"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"text/json":{"schema":{"$ref":"#/components/schemas/Enterprise"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Enterprise"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Enterprise"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/Category":{"get":{"tags":["Category"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/CategoryItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/CategoryItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/CategoryItemList"}}}}}},"post":{"tags":["Category"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Category"}},"text/json":{"schema":{"$ref":"#/components/schemas/Category"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Category"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Category/{id}":{"get":{"tags":["Category"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Category"}},"application/json":{"schema":{"$ref":"#/components/schemas/Category"}},"text/json":{"schema":{"$ref":"#/components/schemas/Category"}}}}}},"put":{"tags":["Category"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Category"}},"text/json":{"schema":{"$ref":"#/components/schemas/Category"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Category"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Category"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/UnitOfMeasure":{"get":{"tags":["UnitOfMeasure"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/UnitOfMeasureItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasureItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasureItemList"}}}}}},"post":{"tags":["UnitOfMeasure"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"text/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/UnitOfMeasure/{id}":{"get":{"tags":["UnitOfMeasure"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"application/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"text/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}}}}}},"put":{"tags":["UnitOfMeasure"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"text/json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/UnitOfMeasure"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["UnitOfMeasure"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
+"/api/Vendor":{"get":{"tags":["Vendor"],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/VendorItemList"}},"application/json":{"schema":{"$ref":"#/components/schemas/VendorItemList"}},"text/json":{"schema":{"$ref":"#/components/schemas/VendorItemList"}}}}}},"post":{"tags":["Vendor"],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"text/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Vendor"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},"/api/Vendor/{id}":{"get":{"tags":["Vendor"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"$ref":"#/components/schemas/Vendor"}},"application/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"text/json":{"schema":{"$ref":"#/components/schemas/Vendor"}}}}}},"put":{"tags":["Vendor"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"text/json":{"schema":{"$ref":"#/components/schemas/Vendor"}},"application/*+json":{"schema":{"$ref":"#/components/schemas/Vendor"}}}},"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}},"delete":{"tags":["Vendor"],"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}],"responses":{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"integer","format":"int32"}},"application/json":{"schema":{"type":"integer","format":"int32"}},"text/json":{"schema":{"type":"integer","format":"int32"}}}}}}},
 
   },
   "components": {
@@ -1085,7 +1093,65 @@
         },
         "additionalProperties": false
       },
-      "Attachment": {
+      "ApplicationLog": {
+"type": "object",
+"properties": {
+"EntityId": {
+"type": "string",
+},
+"ActivityType": {
+"type": "string",
+},
+"ContentHistory": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"ApplicationLogItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/ApplicationLog"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"Attachment": {
 "type": "object",
 "properties": {
 "Module": {
@@ -1204,16 +1270,24 @@
 },
 "additionalProperties": false
 },
-"ApplicationLog": {
+"AccountGroup": {
 "type": "object",
 "properties": {
-"EntityId": {
+"Type": {
 "type": "string",
 },
-"ActivityType": {
+"ParentGroupId": {
+"type": "string",
+"nullable": true
+},
+"HierarchyLevel": {
+"type": "integer",
+"format": "int32",
+},
+"Code": {
 "type": "string",
 },
-"ContentHistory": {
+"Description": {
 "type": "string",
 },
 "Id": {
@@ -1245,7 +1319,7 @@
 },
 "additionalProperties": false
 },
-"ApplicationLogItemList": {
+"AccountGroupItemList": {
 "type": "object",
 "properties": {
 "totalRecord": {
@@ -1255,7 +1329,7 @@
 "items": {
 "type": "array",
 "items": {
-"$ref": "#/components/schemas/ApplicationLog"
+"$ref": "#/components/schemas/AccountGroup"
 },
 "nullable": true
 }
@@ -1273,6 +1347,13 @@
 "nullable": true
 },
 "Enterprise": {
+"type": "string",
+},
+"CompanyId": {
+"type": "string",
+"nullable": true
+},
+"Companies": {
 "type": "string",
 },
 "Indents": {
@@ -1336,10 +1417,1481 @@
 },
 "additionalProperties": false
 },
+"Company": {
+"type": "object",
+"properties": {
+"EnterpriseId": {
+"type": "string",
+"nullable": true
+},
+"Enterprise": {
+"type": "string",
+},
+"ModifiedBy": {
+"type": "string",
+},
+"ModifiedDate": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"BusinessUnits": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"CompanyItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/Company"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"FinancialYear": {
+"type": "object",
+"properties": {
+"StartDate": {
+"type": "string",
+},
+"EndDate": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"FinancialYearItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/FinancialYear"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"GRN": {
+"type": "object",
+"properties": {
+"GRNDate": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"BusinessUnitId": {
+"type": "string",
+"nullable": true
+},
+"BusinessUnit": {
+"type": "string",
+},
+"PurchaseOrderId": {
+"type": "string",
+"nullable": true
+},
+"PurchaseOrder": {
+"type": "string",
+},
+"ReceivedDate": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"PerformedBy": {
+"type": "string",
+},
+"FinancialYearId": {
+"type": "string",
+"nullable": true
+},
+"GRNItems": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"GRNItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/GRN"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"GRNItem": {
+"type": "object",
+"properties": {
+"GRNDate": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"GRNId": {
+"type": "string",
+"nullable": true
+},
+"GRN": {
+"type": "string",
+},
+"ItemId": {
+"type": "string",
+"nullable": true
+},
+"ItemMaster": {
+"type": "string",
+},
+"BatchNo": {
+"type": "string",
+},
+"Expiry": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Quantity": {
+"type": "string",
+"nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"GRNItemItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/GRNItem"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"Indent": {
+"type": "object",
+"properties": {
+"IndentDate": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"BusinessUnitId": {
+"type": "string",
+"nullable": true
+},
+"BusinessUnit": {
+"type": "string",
+},
+"Purpose": {
+"type": "string",
+},
+"FinancialYearId": {
+"type": "string",
+"nullable": true
+},
+"IndentItems": {
+"type": "string",
+},
+"RequiredByDate": {
+"type": "string",
+"nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"IndentItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/Indent"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"IndentItem": {
+"type": "object",
+"properties": {
+"GRNDate": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"IndentId": {
+"type": "string",
+"nullable": true
+},
+"Indent": {
+"type": "string",
+},
+"ItemId": {
+"type": "string",
+"nullable": true
+},
+"ItemMaster": {
+"type": "string",
+},
+"Quantity": {
+"type": "string",
+"nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"IndentItemItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/IndentItem"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"ItemGroup": {
+"type": "object",
+"properties": {
+"ItemTypeId": {
+"type": "string",
+"nullable": true
+},
+"ItemType": {
+"type": "string",
+"nullable": true
+},
+"ItemMasters": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"ItemGroupItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/ItemGroup"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"ItemMaster": {
+"type": "object",
+"properties": {
+"ItemTypeId": {
+"type": "string",
+"nullable": true
+},
+"ItemType": {
+"type": "string",
+"nullable": true
+},
+"ItemGroupId": {
+"type": "string",
+"nullable": true
+},
+"ItemGroup": {
+"type": "string",
+},
+"UnitOfMeasureId": {
+"type": "string",
+"nullable": true
+},
+"UnitOfMeasure": {
+"type": "string",
+},
+"Rate": {
+"type": "string",
+"nullable": true
+},
+"Centralized": {
+"type": "string",
+"nullable": true
+},
+"StockConsumptions": {
+"type": "string",
+},
+"StockAdjustments": {
+"type": "string",
+},
+"StockEntries": {
+"type": "string",
+},
+"GRNItems": {
+"type": "string",
+},
+"PurchaseOrderItems": {
+"type": "string",
+},
+"IndentItems": {
+"type": "string",
+},
+"ReagentMappings": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"ItemMasterItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/ItemMaster"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"Ledger": {
+"type": "object",
+"properties": {
+"AccountGroupId": {
+"type": "string",
+"nullable": true
+},
+"CompanyId": {
+"type": "string",
+"nullable": true
+},
+"Company": {
+"type": "string",
+},
+"LedgerType": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"LedgerItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/Ledger"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"PurchaseBill": {
+"type": "object",
+"properties": {
+"SupplierId": {
+"type": "string",
+"nullable": true
+},
+"Supplier": {
+"type": "string",
+},
+"FinancialYearId": {
+"type": "string",
+"nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"PurchaseBillItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/PurchaseBill"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"PurchaseOrder": {
+"type": "object",
+"properties": {
+"PurchaseOrderDate": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"SupplierId": {
+"type": "string",
+"nullable": true
+},
+"Supplier": {
+"type": "string",
+},
+"CompanyId": {
+"type": "string",
+"nullable": true
+},
+"Company": {
+"type": "string",
+},
+"ApprovalStatus": {
+"type": "string",
+},
+"FinancialYearId": {
+"type": "string",
+"nullable": true
+},
+"GRNs": {
+"type": "string",
+},
+"PurchaseOrderItems": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"PurchaseOrderItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/PurchaseOrder"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"PurchaseOrderItem": {
+"type": "object",
+"properties": {
+"PurchaseOrderId": {
+"type": "string",
+"nullable": true
+},
+"PurchaseOrder": {
+"type": "string",
+},
+"ItemId": {
+"type": "string",
+"nullable": true
+},
+"ItemMaster": {
+"type": "string",
+},
+"Quantity": {
+"type": "string",
+"nullable": true
+},
+"Rate": {
+"type": "string",
+"nullable": true
+},
+"IndentId": {
+"type": "string",
+"nullable": true
+},
+"GRNs": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"PurchaseOrderItemItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/PurchaseOrderItem"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"ReagentMapping": {
+"type": "object",
+"properties": {
+"TestId": {
+"type": "string",
+"nullable": true
+},
+"ItemId": {
+"type": "string",
+"nullable": true
+},
+"ItemMaster": {
+"type": "string",
+},
+"QuantityUsed": {
+"type": "string",
+"nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"ReagentMappingItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/ReagentMapping"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"StockAdjustment": {
+"type": "object",
+"properties": {
+"StoreId": {
+"type": "string",
+"nullable": true
+},
+"Store": {
+"type": "string",
+},
+"ItemId": {
+"type": "string",
+"nullable": true
+},
+"ItemMaster": {
+"type": "string",
+},
+"Reason": {
+"type": "string",
+},
+"QuantityAdjusted": {
+"type": "string",
+"nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"StockAdjustmentItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/StockAdjustment"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"StockConsumption": {
+"type": "object",
+"properties": {
+"TestId": {
+"type": "string",
+"nullable": true
+},
+"ItemId": {
+"type": "string",
+"nullable": true
+},
+"ItemMaster": {
+"type": "string",
+},
+"StockConsumptionDate": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"QuantityUsed": {
+"type": "string",
+"nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"StockConsumptionItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/StockConsumption"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"StockEntry": {
+"type": "object",
+"properties": {
+"StoreId": {
+"type": "string",
+"nullable": true
+},
+"Store": {
+"type": "string",
+},
+"ItemId": {
+"type": "string",
+"nullable": true
+},
+"ItemMaster": {
+"type": "string",
+},
+"BatchNo": {
+"type": "string",
+},
+"Expiry": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"QuantityAvailable": {
+"type": "string",
+"nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"StockEntryItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/StockEntry"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"StockStatus": {
+"type": "object",
+"properties": {
+"BusinessUnitId": {
+"type": "string",
+"nullable": true
+},
+"ItemId": {
+"type": "string",
+"nullable": true
+},
+"ItemMaster": {
+"type": "string",
+},
+"QuantityAvailable": {
+"type": "string",
+"nullable": true
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"StockStatusItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/StockStatus"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"Store": {
+"type": "object",
+"properties": {
+"BusinessUnitId": {
+"type": "string",
+"nullable": true
+},
+"BusinessUnit": {
+"type": "string",
+},
+"StockAdjustments": {
+"type": "string",
+},
+"StockEntries": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"StoreItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/Store"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
+"Supplier": {
+"type": "object",
+"properties": {
+"GSTIN": {
+"type": "string",
+},
+"PAN": {
+"type": "string",
+},
+"ContactInfo": {
+"type": "string",
+},
+"CompanyId": {
+"type": "string",
+"nullable": true
+},
+"Company": {
+"type": "string",
+},
+"PurchaseOrders": {
+"type": "string",
+},
+"Code": {
+"type": "string",
+},
+"Description": {
+"type": "string",
+},
+"Id": {
+"type": "string",
+},
+"Name": {
+"type": "string",
+"maxLength": 511,
+"minLength": 0,
+},
+"status": {
+"$ref": "#/components/schemas/StatusType"
+},
+"Date": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
+"Member": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+"Key": {
+"type": "string",
+"maxLength": 255,
+"minLength": 0,
+},
+},
+"additionalProperties": false
+},
+"SupplierItemList": {
+"type": "object",
+"properties": {
+"totalRecord": {
+"type": "integer",
+"format": "int32"
+},
+"items": {
+"type": "array",
+"items": {
+"$ref": "#/components/schemas/Supplier"
+},
+"nullable": true
+}
+},
+"additionalProperties": false
+},
 "Enterprise": {
 "type": "object",
 "properties": {
+"ModifiedBy": {
+"type": "string",
+},
+"ModifiedDate": {
+"type": "string",
+"format": "date-time",
+"nullable": true
+},
 "BusinessUnits": {
+"type": "string",
+},
+"Companies": {
 "type": "string",
 },
 "Code": {
@@ -1513,10 +3065,7 @@
 "Vendor": {
 "type": "object",
 "properties": {
-"Contact": {
-"type": "string",
-},
-"PurchaseOrders": {
+"ItemMasters": {
 "type": "string",
 },
 "Code": {
@@ -1565,933 +3114,6 @@
 "type": "array",
 "items": {
 "$ref": "#/components/schemas/Vendor"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"GRN": {
-"type": "object",
-"properties": {
-"GRNDate": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"BusinessUnitId": {
-"type": "string",
-"nullable": true
-},
-"BusinessUnit": {
-"type": "string",
-},
-"PurchaseOrderId": {
-"type": "string",
-"nullable": true
-},
-"PurchaseOrder": {
-"type": "string",
-},
-"GRNItems": {
-"type": "string",
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"GRNItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/GRN"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"GRNItem": {
-"type": "object",
-"properties": {
-"GRNDate": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"GRNId": {
-"type": "string",
-"nullable": true
-},
-"GRN": {
-"type": "string",
-},
-"ItemMasterId": {
-"type": "string",
-"nullable": true
-},
-"ItemMaster": {
-"type": "string",
-},
-"BatchNo": {
-"type": "string",
-},
-"Expiry": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Quantity": {
-"type": "string",
-"nullable": true
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"GRNItemItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/GRNItem"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"Indent": {
-"type": "object",
-"properties": {
-"IndentDate": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"BusinessUnitId": {
-"type": "string",
-"nullable": true
-},
-"BusinessUnit": {
-"type": "string",
-},
-"IndentItems": {
-"type": "string",
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"IndentItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/Indent"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"IndentItem": {
-"type": "object",
-"properties": {
-"GRNDate": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"IndentId": {
-"type": "string",
-"nullable": true
-},
-"Indent": {
-"type": "string",
-},
-"ItemMasterId": {
-"type": "string",
-"nullable": true
-},
-"ItemMaster": {
-"type": "string",
-},
-"Quantity": {
-"type": "string",
-"nullable": true
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"IndentItemItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/IndentItem"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"ItemMaster": {
-"type": "object",
-"properties": {
-"Type": {
-"type": "string",
-},
-"CategoryId": {
-"type": "string",
-"nullable": true
-},
-"Category": {
-"type": "string",
-},
-"UnitOfMeasureId": {
-"type": "string",
-"nullable": true
-},
-"UnitOfMeasure": {
-"type": "string",
-},
-"StockConsumptions": {
-"type": "string",
-},
-"StockAdjustments": {
-"type": "string",
-},
-"StockEntries": {
-"type": "string",
-},
-"GRNItems": {
-"type": "string",
-},
-"PurchaseOrderItems": {
-"type": "string",
-},
-"IndentItems": {
-"type": "string",
-},
-"ReagentMappings": {
-"type": "string",
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"ItemMasterItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/ItemMaster"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"PurchaseOrder": {
-"type": "object",
-"properties": {
-"PurchaseOrderDate": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"VendorId": {
-"type": "string",
-"nullable": true
-},
-"Vendor": {
-"type": "string",
-},
-"GRNs": {
-"type": "string",
-},
-"PurchaseOrderItems": {
-"type": "string",
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"PurchaseOrderItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/PurchaseOrder"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"PurchaseOrderItem": {
-"type": "object",
-"properties": {
-"PurchaseOrderId": {
-"type": "string",
-"nullable": true
-},
-"PurchaseOrder": {
-"type": "string",
-},
-"ItemMasterId": {
-"type": "string",
-"nullable": true
-},
-"ItemMaster": {
-"type": "string",
-},
-"Quantity": {
-"type": "string",
-"nullable": true
-},
-"Price": {
-"type": "string",
-"nullable": true
-},
-"GRNs": {
-"type": "string",
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"PurchaseOrderItemItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/PurchaseOrderItem"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"ReagentMapping": {
-"type": "object",
-"properties": {
-"TestId": {
-"type": "string",
-"nullable": true
-},
-"ItemMasterId": {
-"type": "string",
-"nullable": true
-},
-"ItemMaster": {
-"type": "string",
-},
-"QuantityUsed": {
-"type": "string",
-"nullable": true
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"ReagentMappingItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/ReagentMapping"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"StockAdjustment": {
-"type": "object",
-"properties": {
-"StoreId": {
-"type": "string",
-"nullable": true
-},
-"Store": {
-"type": "string",
-},
-"ItemMasterId": {
-"type": "string",
-"nullable": true
-},
-"ItemMaster": {
-"type": "string",
-},
-"Reason": {
-"type": "string",
-},
-"QuantityAdjusted": {
-"type": "string",
-"nullable": true
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"StockAdjustmentItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/StockAdjustment"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"StockConsumption": {
-"type": "object",
-"properties": {
-"TestId": {
-"type": "string",
-"nullable": true
-},
-"ItemMasterId": {
-"type": "string",
-"nullable": true
-},
-"ItemMaster": {
-"type": "string",
-},
-"StockConsumptionDate": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"QuantityUsed": {
-"type": "string",
-"nullable": true
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"StockConsumptionItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/StockConsumption"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"StockEntry": {
-"type": "object",
-"properties": {
-"StoreId": {
-"type": "string",
-"nullable": true
-},
-"Store": {
-"type": "string",
-},
-"ItemMasterId": {
-"type": "string",
-"nullable": true
-},
-"ItemMaster": {
-"type": "string",
-},
-"BatchNo": {
-"type": "string",
-},
-"Expiry": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"QuantityAvailable": {
-"type": "string",
-"nullable": true
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"StockEntryItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/StockEntry"
-},
-"nullable": true
-}
-},
-"additionalProperties": false
-},
-"Store": {
-"type": "object",
-"properties": {
-"BusinessUnitId": {
-"type": "string",
-"nullable": true
-},
-"BusinessUnit": {
-"type": "string",
-},
-"StockAdjustments": {
-"type": "string",
-},
-"StockEntries": {
-"type": "string",
-},
-"Code": {
-"type": "string",
-},
-"Description": {
-"type": "string",
-},
-"Id": {
-"type": "string",
-},
-"Name": {
-"type": "string",
-"maxLength": 511,
-"minLength": 0,
-},
-"status": {
-"$ref": "#/components/schemas/StatusType"
-},
-"Date": {
-"type": "string",
-"format": "date-time",
-"nullable": true
-},
-"Member": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-"Key": {
-"type": "string",
-"maxLength": 255,
-"minLength": 0,
-},
-},
-"additionalProperties": false
-},
-"StoreItemList": {
-"type": "object",
-"properties": {
-"totalRecord": {
-"type": "integer",
-"format": "int32"
-},
-"items": {
-"type": "array",
-"items": {
-"$ref": "#/components/schemas/Store"
 },
 "nullable": true
 }
