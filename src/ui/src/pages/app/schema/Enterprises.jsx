@@ -14,6 +14,8 @@ export const ListEnterprise = () => {
         fields: [
             { text: 'Name', field: 'name', type: 'link', sorting: true, searching: true },
             { text: 'Alias', field: 'code', type: 'text', sorting: true, searching: true },
+            { text: 'Address', field: 'address', type: 'text', sorting: true, searching: true },
+            { text: 'Phone Number', field: 'phoneNumber', type: 'text', sorting: true, searching: true },
         ]
     }
 
@@ -37,6 +39,8 @@ export const ViewEnterprise = () => {
                 , fields: [
                     { text: 'Name', field: 'name', fieldIcon: 'object-group', type: 'label', width: 6 },
                     { text: 'Alias', field: 'code', type: 'label', width: 6 },
+                    { text: 'Address', field: 'address', type: 'label', width: 6 },
+                    { text: 'Phone Number', field: 'phoneNumber', fieldIcon: 'phone', type: 'label', width: 6 },
                     { text: 'Description', field: 'description', type: 'label', width: 12 },
                 ]
             },
@@ -80,6 +84,8 @@ export const EditEnterprise = () => {
                 , fields: [
                     { text: 'Name', field: 'name', fieldIcon: 'object-group', placeholder: 'Name here...', type: 'text', required: true, width: 6 },
                     { text: 'Alias', field: 'code', type: 'text', required: true, width: 6 },
+                    { text: 'Address', field: 'address', placeholder: 'Address here...', type: 'textarea', required: false, width: 6 },
+                    { text: 'Phone Number', field: 'phoneNumber', fieldIcon: 'phone', placeholder: 'Phone Number here...', type: 'phone', required: false, width: 6 },
                     { text: 'Description', field: 'description', type: 'textarea', required: false, width: 12 },
                 ]
             }
@@ -101,6 +107,8 @@ export const AddEnterprise = () => {
                 , fields: [
                     { text: 'Name', field: 'name', fieldIcon: 'object-group', placeholder: 'Name here...', type: 'text', required: true, width: 6 },
                     { text: 'Alias', field: 'code', type: 'text', required: true, width: 6 },
+                    { text: 'Address', field: 'address', placeholder: 'Address here...', type: 'textarea', required: false, width: 6 },
+                    { text: 'Phone Number', field: 'phoneNumber', fieldIcon: 'phone', placeholder: 'Phone Number here...', type: 'phone', required: false, width: 6 },
                     { text: 'Description', field: 'description', type: 'textarea', required: false, width: 12 },
                 ]
             }

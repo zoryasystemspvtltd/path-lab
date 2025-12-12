@@ -1344,7 +1344,7 @@ legend {font-size:.88rem; font-weight:700 }
 .app-login-box .icon-fa {position: absolute; top: 36px; left: 15px;  font-size: 24px; color: #6b6b6b; }
 .app-login-box .icon-input {padding-left: 50px; margin-top: 5px;  height: 45px;  border-radius: 10px; font-size: 17px;}
 /* .app-login .carousel-item img { height: 100vh; background-size: cover;  opacity: .9;} */
-.app-login.app-theme-login-bg {background:url(../images/login-screen-bg-old.jpg) no-repeat;  height: 100vh; background-size: cover;  }
+.app-login.app-theme-login-bg {background:url(../images/ai/LAB.png) no-repeat;  height: 100vh; background-size: cover;  }
 
 .app-inner-layout.rm-sidebar .app-inner-layout__wrapper .app-inner-layout__content { width:auto; float:none }
 .app-inner-layout .app-inner-layout__header { width:100%; padding:1.5rem; text-align:left; border-bottom:solid 1px }

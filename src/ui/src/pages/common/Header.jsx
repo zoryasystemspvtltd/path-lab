@@ -72,9 +72,9 @@ const Header = ({ headerToLayout, headerMenuToLayout }) => {
     }, [loggedInUser]);
 
     const handleLogout = () => {
-        setToken({ logout: true });
+        setToken(null);
         dispatch(loginUser());
-        navigate("/", { replace: true });
+        navigate("/home", { replace: true });
     };
 
     const logoutUser = async (e) => {

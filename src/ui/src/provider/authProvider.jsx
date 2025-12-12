@@ -20,6 +20,12 @@ const AuthProvider = ({ children }) => {
       setRefreshToken_()
     }
 
+    if (token === null || token === undefined) {
+      sessionStorage.clear();
+      localStorage.clear();
+      setRefreshToken_()
+    }
+
     if (token && !token.logout) {
       sessionStorage.setItem("token", JSON.stringify(token));
       menuRole ? sessionStorage.setItem("menuRole", menuRole) : sessionStorage.setItem("menuRole", "admin");

@@ -19,7 +19,7 @@ const Layout = () => {
 
     const headerMenuToLayout = (sidebarRole) => {
         setMenuRole(sidebarRole);
-        navigate("/home", { replace: true });
+        navigate("/dashboard", { replace: true });
     }
 
     useEffect(() => {

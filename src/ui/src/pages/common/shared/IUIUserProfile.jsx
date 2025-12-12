@@ -119,7 +119,7 @@ const IUIUserProfile = (props) => {
                                                     {schema?.back &&
                                                         <Button variant="contained"
                                                             className="btn-wide btn-pill btn-shadow btn-hover-shine btn btn-secondary btn-md mr-2"
-                                                            onClick={() => navigate(`/home`)}> Back </Button>
+                                                            onClick={() => navigate(`/dashboard`)}> Back </Button>
                                                     }
                                                     {!schema?.readonly &&
                                                         <>
@@ -185,7 +185,7 @@ const IUIUserProfile = (props) => {
                                                     {schema?.back &&
                                                         <Button variant="contained"
                                                             className="btn-wide btn-pill btn-shadow btn-hover-shine btn btn-secondary btn-md mr-2"
-                                                            onClick={() => navigate(`/home`)}> Back </Button>
+                                                            onClick={() => navigate(`/dashboard`)}> Back </Button>
                                                     }
                                                     {!schema?.readonly &&
                                                         <>

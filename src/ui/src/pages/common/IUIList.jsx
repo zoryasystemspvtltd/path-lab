@@ -232,7 +232,7 @@ const IUIList = (props) => {
                                                                         <>
                                                                             <td width={10}>
                                                                                 {privileges.edit &&
-                                                                                    <Link to={`${item.id}/edit`} title='Edit'><i className="fa-solid fa-pencil"></i></Link>
+                                                                                    <Link to={`/${schema?.path}/${item.id}/edit`} title='Edit'><i className="fa-solid fa-pencil"></i></Link>
                                                                                 }
                                                                             </td>
                                                                         </>
@@ -240,7 +240,7 @@ const IUIList = (props) => {
                                                                     {schema?.fields?.map((fld, f) => (
                                                                         <td key={f}>
                                                                             {fld.type === 'link' &&
-                                                                                <Link to={`${item.id}`}>{item[fld.field]}</Link>
+                                                                                <Link to={`/${schema?.path}/${item.id}`}>{item[fld.field]}</Link>
                                                                             }
                                                                             {(!fld.type || fld.type === 'text') && item[fld.field]}
                                                                             {fld.type === 'date' && formatStringDate(item[fld.field])}
