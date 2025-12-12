@@ -10,9 +10,9 @@ const Logout = () => {
   const dispatch = useDispatch();
 
   const handleLogout = () => {
-    setToken();
+    setToken(null);
     dispatch(loginUser());
-    navigate("/", { replace: true });
+    navigate("/home", { replace: true });
   };
 
 

@@ -106,7 +106,7 @@ const IUIHeaderMenu = (props) => {
                                     <div className="grid-menu grid-menu-xl grid-menu-3col">
                                         <div className="no-gutters row">
                                             {
-                                                (!loggedInUser?.roles?.includes("Super Admin")) ? (
+                                                (loggedInUser?.roles?.includes("Super Admin")) ? (
                                                     Object.keys(menuSchema).map((key, index) => {
                                                         return (
                                                             <div className="col-sm-6 col-xl-4" key={`col_${menuSchema[key].text}_${index}`}>

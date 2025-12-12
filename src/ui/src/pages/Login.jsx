@@ -95,15 +95,16 @@ const Login = () => {
         <div className="app-login app-container app-theme-login-bg">
             <div className="app-container">
 
-                <div className="mx-auto app-login-box">
+                <div className="mx-auto app-login-box" style={{ maxWidth: '600px', width: '90%', padding: '40px' }}>
                     <div className="app-logo">
                         <img src={logo} alt='logo' />
-                        <h3 className="m-4"><strong>PATHLAB SOFTWARE</strong></h3>
+                        <h3 className="m-4"><strong>Laboratory Management System</strong></h3>
                     </div>
 
                     <h2 className="mb-0 text-center">
                         <span className="d-block">User Login</span>
                     </h2>
+
                     <Form onSubmit={(e) => loginWithUsernameAndPassword(e)}>
                         <Row>
                             <Col md={12} className="mt-2">
@@ -141,14 +142,21 @@ const Login = () => {
                                     {notice}
                                 </Alert>
                             }
-                            <Col md={12} className="mt-3">
-                                <Button
-                                    variant="contained"
-                                    className="btn-wide btn-pill btn-shadow btn-hover-shine btn btn-primary btn-lg w-100"
-                                    type="submit"
-                                >
-                                    Login
-                                </Button>
+                            <Col md={10} className="mt-3 mx-auto">
+                                <Row className="g-2">
+                                    <Col md={6}>
+                                        <Link to={'/signup'} className="btn-wide btn-pill btn-shadow btn-hover-shine btn btn-secondary btn-lg w-100">Sign Up</Link>
+                                    </Col>
+                                    <Col md={6}>
+                                        <Button
+                                            variant="contained"
+                                            className="btn-wide btn-pill btn-shadow btn-hover-shine btn btn-primary btn-lg w-100"
+                                            type="submit"
+                                        >
+                                            Login
+                                        </Button>
+                                    </Col>
+                                </Row>
                             </Col>
                             <Col md={12} className="mt-2">
                                 <Link to={'/forgot-password'} className="btn-lg btn btn-link w-100">Recover Password</Link>

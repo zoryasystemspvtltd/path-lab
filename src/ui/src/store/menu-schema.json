@@ -72,7 +72,7 @@
                 "name": "userDashboard",
                 "text": "Dashboard",
                 "icon": "vector-square",
-                "path": "/home"
+                "path": "/dashboard"
             }
         ],
         "report": [
@@ -80,7 +80,7 @@
                 "name": "adminReport",
                 "text": "Admin",
                 "icon": "vector-square",
-                "path": "/home"
+                "path": "/dashboard"
             }
         ]
     },
@@ -221,5 +221,91 @@
                 "path": "/site-material-approval-report"
             }
         ]
+    },
+    "setup": {
+        "text": "Setup",
+        "icon": "gear",
+        "master": [
+            {
+                "name": "storeManagement",
+                "text": "Store",
+                "icon": "warehouse",
+                "path": "/stores"
+            },
+            {
+                "name": "testMasterManagement",
+                "text": "Test Master",
+                "icon": "flask",
+                "path": "/testmasters"
+            },
+            {
+                "name": "testParameterManagement",
+                "text": "Test Parameter",
+                "icon": "list",
+                "path": "/testparameters"
+            },
+            {
+                "name": "purchaseOrderManagement",
+                "text": "Purchase Order",
+                "icon": "file-invoice",
+                "path": "/purchaseorders"
+            },
+            {
+                "name": "poItemManagement",
+                "text": "PO Item",
+                "icon": "shopping-cart",
+                "path": "/poitems"
+            },
+            {
+                "name": "indentManagement",
+                "text": "Indent",
+                "icon": "file-lines",
+                "path": "/indents"
+            },
+            {
+                "name": "indentItemManagement",
+                "text": "Indent Item",
+                "icon": "list-check",
+                "path": "/indentitems"
+            },
+            {
+                "name": "grnManagement",
+                "text": "GRN",
+                "icon": "file-invoice",
+                "path": "/grns"
+            },
+            {
+                "name": "grnItemManagement",
+                "text": "GRN Item",
+                "icon": "box",
+                "path": "/grnitems" 
+            },
+            {
+                "name": "stockEntryManagement",
+                "text": "Stock Entry",
+                "icon": "box-open",
+                "path": "/stockentries"
+            },
+            {
+                "name": "reagentMappingManagement",
+                "text": "Reagent Mapping",
+                "icon": "link",
+                "path": "/reagentmappings"  
+            },
+            {
+                "name": "stockAdjustmentManagement",
+                "text": "Stock Adjustment",
+                "icon": "arrows-rotate",
+                "path": "/stockadjustments" 
+            },
+            {
+                "name": "stockConsumptionManagement",
+                "text": "Stock Consumption",
+                "icon": "chart-line",
+                "path": "/stockconsumptions"        
+            }
+        ],
+        "transaction": [],
+        "report": []
     }
 }
